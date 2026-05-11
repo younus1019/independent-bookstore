@@ -1,0 +1,1042 @@
+/* RESET */
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family:'Poppins',sans-serif;
+}
+
+/* COLORS */
+:root{
+  --primary:#8B5E3C;
+  --secondary:#D6B98C;
+  --dark:#2C1810;
+  --light:#F8F5F0;
+  --text:#3E2C23;
+  --white:#ffffff;
+}
+
+/* STOP SIDE SCROLL */
+html,body{
+  overflow-x:hidden;
+}
+
+/* BODY */
+body{
+  background:var(--light);
+  color:var(--text);
+  transition:0.4s;
+}
+
+/* HEADER */
+header{
+  width:100%;
+  padding:15px 5%;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  background:white;
+  position:sticky;
+  top:0;
+  z-index:1000;
+  box-shadow:0 2px 10px rgba(0,0,0,0.05);
+}
+
+/* LOGO */
+.logo{
+  display:flex;
+  align-items:center;
+  gap:10px;
+  font-size:22px;
+  font-weight:700;
+  color:var(--primary);
+}
+
+.logo img{
+  width:55px;
+  height:55px;
+  border-radius:50%;
+  object-fit:cover;
+}
+
+/* NAV */
+nav ul{
+  display:flex;
+  list-style:none;
+  gap:25px;
+}
+
+nav ul li a{
+  text-decoration:none;
+  color:var(--text);
+  font-weight:500;
+}
+
+nav ul li a:hover{
+  color:var(--primary);
+}
+
+/* HEADER BUTTONS */
+.header-buttons{
+  display:flex;
+  gap:10px;
+  align-items:center;
+}
+
+/* BUTTONS */
+.primary-btn{
+  padding:10px 18px;
+  border:none;
+  background:var(--primary);
+  color:white;
+  border-radius:8px;
+  cursor:pointer;
+}
+
+.secondary-btn{
+  padding:10px 18px;
+  border:2px solid var(--primary);
+  background:transparent;
+  color:var(--primary);
+  border-radius:8px;
+  cursor:pointer;
+}
+
+/* HERO */
+.hero{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  padding:80px 10%;
+  gap:40px;
+  background:#f3ece4;
+}
+
+.hero-text{
+  flex:1;
+}
+
+.hero-text h1{
+  font-size:50px;
+}
+
+.hero-text span{
+  color:var(--primary);
+}
+
+.hero-text p{
+  margin:20px 0;
+  color:#666;
+}
+
+.hero-image{
+  flex:1;
+  display:flex;
+  justify-content:center;
+}
+
+.hero-image img{
+  width:100%;
+  max-width:350px;
+  height:auto;
+  border-radius:20px;
+}
+
+/* SECTIONS */
+.features,
+.books,
+.best-sellers,
+.reviews,
+.pricing,
+.app-section{
+  padding:80px 10%;
+  text-align:center;
+}
+
+.section-title{
+  font-size:40px;
+  margin-bottom:15px;
+}
+
+.section-text{
+  color:#666;
+  margin-bottom:40px;
+}
+
+/* GRID */
+.feature-grid,
+.book-grid,
+.seller-grid,
+.pricing-grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+  gap:25px;
+}
+
+/* CARDS */
+.feature-card,
+.book-card,
+.seller-card,
+.pricing-card{
+  background:white;
+  padding:25px;
+  border-radius:15px;
+  box-shadow:0 4px 15px rgba(0,0,0,0.08);
+}
+
+/* BEST SELLER FIX (IMPORTANT) */
+.seller-card{
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  gap:10px;
+}
+
+.seller-card img{
+  width:100%;
+  height:250px;
+  object-fit:cover;
+  border-radius:10px;
+  display:block;
+}
+
+/* BOOK IMAGE */
+.book-card img{
+  width:100%;
+  height:300px;
+  object-fit:cover;
+  border-radius:10px;
+}
+
+/* PRICE */
+.price{
+  color:var(--primary);
+  font-weight:600;
+}
+
+/* POPULAR PLAN */
+.popular{
+  background:var(--primary);
+  color:white;
+}
+
+/* NEWSLETTER */
+.newsletter{
+  padding:80px 10%;
+  background:var(--dark);
+  color:white;
+  text-align:center;
+}
+
+.newsletter form{
+  display:flex;
+  justify-content:center;
+  gap:10px;
+  flex-wrap:wrap;
+  margin-top:20px;
+}
+
+.newsletter input{
+  padding:12px;
+  width:300px;
+  border:none;
+  border-radius:8px;
+}
+footer{
+  padding:60px 10%;
+  background:#1f120c;
+  color:white;
+}
+
+.footer-grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+  gap:40px;
+}
+
+.footer-grid h3{
+  margin-bottom:20px;
+}
+
+.footer-grid p,
+.footer-grid a{
+  color:#d1d5db;
+  text-decoration:none;
+  line-height:2;
+}
+
+.footer-grid a:hover{
+  color:#D6B98C;
+}
+
+.social-icons{
+  display:flex !important;
+  flex-direction:row !important;
+  align-items:center;
+  justify-content:flex-start;
+  gap:15px;
+
+}
+
+.social-icons a{
+  width:40px;
+  height:40px;
+  background:#8B5E3C;
+  border-radius:50%;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  text-decoration:none;
+  transition:0.3s;
+}
+
+.social-icons a:hover{
+  background:#D6B98C;
+  transform:translateY(-5px);
+}
+
+.social-icons i{
+  width:20px;
+  height:20px;
+  color:white;
+}
+.copyright{
+  text-align:center;
+  margin-top:50px;
+  color:#9ca3af;
+  line-height:2;
+}
+
+.copyright-line{
+  width:100%;
+  height:1px;
+  background:#4b5563;
+  margin:20px 0;
+}
+
+.middle-line{
+  width:220px;
+  height:1px;
+  background:#4b5563;
+  margin:15px auto;
+}
+@media(max-width:991px){
+
+  header{
+    flex-direction:column;
+    gap:20px;
+  }
+
+  nav ul{
+    flex-wrap:wrap;
+    justify-content:center;
+  }
+
+  .hero{
+    flex-direction:column;
+    text-align:center;
+  }
+
+  .hero-buttons{
+    justify-content:center;
+  }
+
+  .hero-image{
+    justify-content:center;
+  }
+
+  .hero-text h1{
+    font-size:40px;
+  }
+
+} add new sections in this code give full addes code
+website is moving so i want remove 
+like my website moving it is going side
+and in header part gone add that and give codes css and html
+i am asking which i given code that there is header part full now it got removed while u sent new code
+html
+where is social media icons
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Independent Bookstore</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="index.css">
+
+  <script src="https://unpkg.com/lucide@latest"></script>
+
+  <link rel="icon" type="image/png" href="images/logo for website.jpg">
+</head>
+
+<body>
+
+<header>
+
+
+  <div class="logo">
+
+  <img src="images/logo for website.jpg" alt="Logo">
+
+  <span>Bookstore</span>
+
+</div>
+
+  <nav>
+    <ul>
+      <li><a href="#home">Home</a></li>
+      <li><a href="#features">About</a></li>
+      <li><a href="#books">Books</a></li>
+      <li><a href="#pricing">Pricing</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <div class="header-buttons">
+
+    <div class="mode-icon" id="theme-toggle">
+      <i data-lucide="moon"></i>
+    </div>
+
+     <button class="primary-btn" id="start-btn">Get Started</button>
+    <button class="secondary-btn" id="login-btn">Login</button>
+    
+
+  </div>
+
+</header>
+
+<section class="hero" id="home">
+
+  <div class="hero-text">
+
+    <h1>
+      Discover Your Next
+      <span>Favorite Book</span>
+    </h1>
+
+    <p>
+      Explore thousands of books from independent
+      authors and publishers around the world.
+    </p>
+
+    <div class="hero-buttons">
+      <button class="primary-btn">Browse Books</button>
+      <button class="secondary-btn">Join Community</button>
+    </div>
+ <br>
+  </div>
+
+  <div class="hero-image">
+    <img src="images/image-2.jpg" alt="Books">
+  </div>
+
+</section>
+
+<section class="features" id="features">
+
+  <h2 class="section-title">Why Choose Us</h2>
+
+  <p class="section-text">
+    We provide the best reading experience for book lovers.
+  </p>
+
+  <div class="feature-grid">
+
+    <div class="feature-card">
+      <i data-lucide="book-open"></i>
+      <h3>Huge Collection</h3>
+      <p>Explore thousands of books across multiple categories.</p>
+    </div>
+
+    <div class="feature-card">
+      <i data-lucide="truck"></i>
+      <h3>Fast Delivery</h3>
+      <p>Get your books delivered safely and quickly.</p>
+    </div>
+
+    <div class="feature-card">
+      <i data-lucide="users"></i>
+      <h3>Reading Community</h3>
+      <p>Join readers and discuss your favorite books.</p>
+    </div>
+
+  </div>
+  
+
+
+  
+
+  
+  
+  
+
+    
+      
+      
+
+    
+
+<section class="books" id="books">
+
+  <h2 class="section-title">Featured Books</h2>
+
+  <div class="book-grid">
+
+    <div class="book-card">
+
+      <img src="images/image-3.jpg" alt="Book">
+
+      <div class="book-content">
+        <h3>Atomic Habits</h3>
+        <p>James Clear</p>
+        <span class="price">$20</span>
+        <button class="primary-btn add-cart">Add To Cart</button>
+      </div>
+
+    </div>
+
+    <div class="book-card">
+
+      <img src="images/image-2.jpg" alt="Book">
+
+      <div class="book-content">
+        <h3>Rich Dad Poor Dad</h3>
+        <p>Robert Kiyosaki</p>
+        <span class="price">$18</span>
+        <button class="primary-btn add-cart">Add To Cart</button>
+      </div>
+
+    </div>
+
+    <div class="book-card">
+
+      <img src="images/image-1.jpg" alt="Book">
+
+      <div class="book-content">
+        <h3>The Psychology of Money</h3>
+        <p>Morgan Housel</p>
+        <span class="price">$25</span>
+        <button class="primary-btn add-cart">Add To Cart</button>
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+<section class="best-sellers">
+
+
+  <h2 class="section-title">Best Sellers</h2>
+
+  <p class="section-text">
+    Most loved books by our readers.
+  </p>
+  <div class="seller-grid">
+
+    <div class="seller-card">
+      <img src="images/image-2.jpg" alt="Book">
+      <h3>Think Like A Monk</h3>
+      <p>Jay Shetty</p>
+    </div>
+
+    <div class="seller-card">
+      <img src="images/image-3.jpg" alt="Book">
+      <h3>Deep Work</h3>
+      <p>Cal Newport</p>
+    </div>
+
+    <div class="seller-card">
+      <img src="images/image-1.jpg" alt="Book">
+      <h3>The Alchemist</h3>
+      <p>Paulo Coelho</p>
+    </div>
+
+  </div>
+
+</section>
+
+
+<section class="pricing" id="pricing">
+
+  <h2 class="section-title">Membership Plans</h2>
+
+  <div class="pricing-grid">
+
+    <div class="pricing-card">
+      <h3>Basic</h3>
+      <div class="price-tag">$10</div>
+      <p>Access to standard collection</p>
+      <br>
+      <button class="secondary-btn">Choose Plan</button>
+    </div>
+
+    <div class="pricing-card popular">
+      <h3>Popular</h3>
+      <div class="price-tag">$25</div>
+      <p>Premium books + early access</p>
+      <br>
+      <button class="primary-btn">Choose Plan</button>
+    </div>
+
+    <div class="pricing-card">
+      <h3>Premium</h3>
+      <div class="price-tag">$40</div>
+      <p>All benefits + community events</p>
+      <br>
+      <button class="secondary-btn">Choose Plan</button>
+    </div>
+
+  </div>
+  
+
+</section>
+
+<section class="newsletter" id="contact">
+
+  <h2 class="section-title">Subscribe Newsletter</h2>
+
+  <p>Get updates about new books and offers.</p>
+
+  <form id="newsletter-form">
+
+    <input type="email" id="email" placeholder="Enter your email" required>
+
+    <button class="primary-btn">
+      Subscribe
+    </button>
+
+  </form>
+
+</section>
+
+<footer>
+
+
+
+  <div class="footer-grid">
+
+    
+    <div>
+
+      <h3>Independent Bookstore</h3>
+
+      <p>
+        Discover amazing books from independent
+        authors around the world.
+      </p>
+
+      <div class="social-icons">
+
+        <div class="social-icons">
+
+  <a href="https://instagram.com" target="_blank">
+    <i data-lucide="camera"></i>
+  </a>
+
+  <a href="https://twitter.com" target="_blank">
+    <i data-lucide="send"></i>
+  </a>
+
+  <a href="https://youtube.com" target="_blank">
+    <i data-lucide="play"></i>
+  </a>
+
+  <a href="https://linkedin.com" target="_blank">
+    <i data-lucide="briefcase"></i>
+  </a>
+
+  <a href="https://facebook.com" target="_blank">
+    <i data-lucide="users"></i>
+  </a>
+
+</div>
+
+      </div>
+
+    </div>
+
+    
+    <div>
+
+      <h3>Quick Links</h3>
+
+      <a href="index.html">Home</a><br>
+      <a href="about.html">About</a><br>
+      <a href="books.html">Books</a><br>
+      <a href="pricing.html">Pricing</a><br>
+      <a href="contact.html">Contact</a>
+
+    </div>
+
+    
+    <div>
+
+      <h3>Categories</h3>
+
+      <p>Fiction</p>
+      <p>Business</p>
+      <p>Technology</p>
+      <p>Self Development</p>
+      <p>Novels</p>
+
+    </div>
+
+    
+    <div>
+
+      <h3>Contact Info</h3>
+
+      <p>Email: hr@techechosinnovation.com</p>
+
+      <p>Phone: +91 9347657319</p>
+
+      <p>Location: hyderabad, India</p>
+
+      <p>Open: 9AM - 9PM</p>
+
+    </div>
+
+  </div>
+
+  
+ <div class="copyright">
+
+  <div class="copyright-line"></div>
+
+  <p>© 2026 Independent Bookstore</p>
+
+  <div class="middle-line"></div>
+
+  <p>All Rights Reserved</p>
+
+  <div class="copyright-line"></div>
+
+</div>
+
+
+</footer>
+
+<script src="index.js"></script>
+
+</body>
+</html> in this code add new sections which u have give before and give full code
+give full code added version
+along with this give css code
+
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family:'Poppins',sans-serif;
+}
+
+/* COLORS */
+:root{
+  --primary:#8B5E3C;
+  --secondary:#D6B98C;
+  --dark:#2C1810;
+  --light:#F8F5F0;
+  --text:#3E2C23;
+  --white:#ffffff;
+}
+
+/* STOP SIDE SCROLL ISSUE */
+html,body{
+  overflow-x:hidden;
+}
+
+/* BODY */
+body{
+  background:var(--light);
+  color:var(--text);
+  transition:0.4s;
+}
+
+/* HEADER */
+header{
+  width:100%;
+  padding:15px 5%;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  background:white;
+  position:sticky;
+  top:0;
+  z-index:1000;
+  box-shadow:0 2px 10px rgba(0,0,0,0.05);
+}
+
+/* LOGO */
+.logo{
+  display:flex;
+  align-items:center;
+  gap:10px;
+  font-size:22px;
+  font-weight:700;
+  color:var(--primary);
+}
+
+.logo img{
+  width:55px;
+  height:55px;
+  border-radius:50%;
+  object-fit:cover;
+}
+
+/* NAV */
+nav ul{
+  display:flex;
+  list-style:none;
+  gap:25px;
+}
+
+nav ul li a{
+  text-decoration:none;
+  color:var(--text);
+  font-weight:500;
+}
+
+nav ul li a:hover{
+  color:var(--primary);
+}
+
+/* HEADER BUTTONS */
+.header-buttons{
+  display:flex;
+  gap:10px;
+  align-items:center;
+}
+
+/* BUTTONS */
+.primary-btn{
+  padding:10px 18px;
+  border:none;
+  background:var(--primary);
+  color:white;
+  border-radius:8px;
+  cursor:pointer;
+}
+
+.secondary-btn{
+  padding:10px 18px;
+  border:2px solid var(--primary);
+  background:transparent;
+  color:var(--primary);
+  border-radius:8px;
+  cursor:pointer;
+}
+
+/* HERO */
+.hero{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  padding:80px 10%;
+  gap:40px;
+  background:#f3ece4;
+}
+
+.hero-text{
+  flex:1;
+}
+
+.hero-text h1{
+  font-size:50px;
+}
+
+.hero-text span{
+  color:var(--primary);
+}
+
+.hero-text p{
+  margin:20px 0;
+  color:#666;
+}
+
+.hero-image{
+  flex:1;
+  display:flex;
+  justify-content:center;
+}
+
+.hero-image img{
+  width:100%;
+  max-width:350px;
+  height:auto;
+  border-radius:20px;
+}
+
+/* SECTIONS */
+.features,
+.books,
+.best-sellers,
+.reviews,
+.pricing,
+.app-section{
+  padding:80px 10%;
+  text-align:center;
+}
+
+.section-title{
+  font-size:40px;
+  margin-bottom:15px;
+}
+
+.section-text{
+  color:#666;
+  margin-bottom:40px;
+}
+
+/* GRID */
+.feature-grid,
+.book-grid,
+.seller-grid,
+.pricing-grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+  gap:25px;
+}
+
+/* CARDS */
+.feature-card,
+.book-card,
+.seller-card,
+.pricing-card{
+  background:white;
+  padding:25px;
+  border-radius:15px;
+  box-shadow:0 4px 15px rgba(0,0,0,0.08);
+}
+
+/* BOOK IMAGE */
+.book-card img{
+  width:100%;
+  height:300px;
+  object-fit:cover;
+  border-radius:10px;
+}
+
+/* PRICE */
+.price{
+  color:var(--primary);
+  font-weight:600;
+}
+
+/* POPULAR */
+.popular{
+  background:var(--primary);
+  color:white;
+}
+
+/* NEWSLETTER */
+.newsletter{
+  padding:80px 10%;
+  background:var(--dark);
+  color:white;
+  text-align:center;
+}
+
+.newsletter form{
+  display:flex;
+  justify-content:center;
+  gap:10px;
+  flex-wrap:wrap;
+  margin-top:20px;
+}
+
+.newsletter input{
+  padding:12px;
+  width:300px;
+  border:none;
+  border-radius:8px;
+}
+
+/* FOOTER */
+footer{
+  background:#1f120c;
+  color:white;
+  padding:60px 10%;
+}
+
+/* FOOTER GRID */
+.footer-grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+  gap:30px;
+}
+
+/* SOCIAL ICONS - ROW FIX */
+.social-icons{
+  display:flex;
+  flex-direction:row;
+  gap:12px;
+  margin-top:15px;
+}
+
+.social-icons a{
+  width:40px;
+  height:40px;
+  background:var(--primary);
+  border-radius:50%;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  text-decoration:none;
+}
+
+.social-icons a i{
+  width:18px;
+  height:18px;
+  color:white;
+}
+
+/* COPYRIGHT LINES */
+.copyright{
+  text-align:center;
+  margin-top:40px;
+}
+
+.copyright-line,
+.middle-line{
+  height:1px;
+  background:#444;
+  margin:15px auto;
+}
+
+.middle-line{
+  width:200px;
+}
+
+/* RESPONSIVE */
+@media(max-width:991px){
+
+  header{
+    flex-direction:column;
+    gap:15px;
+  }
+
+  nav ul{
+    flex-wrap:wrap;
+    justify-content:center;
+  }
+
+  .hero{
+    flex-direction:column;
+    text-align:center;
+  }
+
+  .hero-text h1{
+    font-size:35px;
+  }
+
+  .hero-image{
+    justify-content:center;
+  }
+
+} 
