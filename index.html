@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Independent Bookstore</title>
+  <title>Pagely Bookstore</title>
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
@@ -17,30 +17,75 @@
 
 <body>
 
-<header>
+<!-- HEADER -->
+<!-- =========================
+NAVBAR
+========================= -->
 
+<header class="header">
+
+  <!-- LOGO -->
   <div class="logo">
+
     <img src="images/logo for website.jpg" alt="Logo">
-    <span>Bookstore</span>
+
+    <h2>Pagely <span>Bookstore</span></h2>
+
   </div>
 
-  <nav>
+
+  <!-- NAVIGATION -->
+  <nav class="navbar">
+
     <ul>
+
       <li><a href="#home">Home</a></li>
-      <li><a href="#features">About</a></li>
-      <li><a href="#books">Books</a></li>
+
+      <li><a href="#about">About</a></li>
+
+      <li><a href="#services">Services</a></li>
+
+      <li><a href="#blog">Blog</a></li>
+
       <li><a href="#pricing">Pricing</a></li>
+
       <li><a href="#contact">Contact</a></li>
+
+      <li><a href="#dashboard">Dashboard</a></li>
+
     </ul>
+
   </nav>
 
-  <div class="header-buttons">
-    <div class="mode-icon" id="theme-toggle">
-      <i data-lucide="moon"></i>
-    </div>
 
-    <button class="primary-btn">Get Started</button>
-    <button class="secondary-btn">Login</button>
+  <!-- RIGHT BUTTONS -->
+  <div class="header-buttons">
+
+    <!-- THEME BUTTON -->
+    <button class="theme-btn" id="theme-toggle">
+
+      <i data-lucide="moon"></i>
+
+      
+
+    </button>
+
+
+    <!-- RTL BUTTON -->
+    <button class="rtl-btn">
+
+      RTL
+
+    </button>
+
+
+    <!-- LOGIN BUTTON -->
+    <button class="login-btn">
+
+      Login
+
+    </button>
+
   </div>
 
 </header>
@@ -91,35 +136,43 @@
     </div>
 
   </div>
+
 </section>
 
-<!-- AUTHORS (NEW SECTION) -->
-<section class="authors">
+<!-- AUTHORS -->
+<section class="authors" id="authors">
 
   <h2 class="section-title">Popular Authors</h2>
-  <p class="section-text">Meet some of the most loved authors by readers.</p>
+  <p class="section-text">Meet the most loved authors by readers worldwide.</p>
 
-  <div class="feature-grid">
+  <div class="author-grid">
 
-    <div class="feature-card">
-      <i data-lucide="pen-tool"></i>
+    <div class="author-card">
+      <img src="images/image-1.jpg" alt="Author">
       <h3>James Clear</h3>
-      <p>Atomic Habits author.</p>
+      <p>Atomic Habits</p>
     </div>
 
-    <div class="feature-card">
-      <i data-lucide="feather"></i>
+    <div class="author-card">
+      <img src="images/image-2.jpg" alt="Author">
+      <h3>Robert Kiyosaki</h3>
+      <p>Rich Dad Poor Dad</p>
+    </div>
+
+    <div class="author-card">
+      <img src="images/image-3.jpg" alt="Author">
       <h3>Morgan Housel</h3>
-      <p>Psychology of Money writer.</p>
+      <p>Psychology of Money</p>
     </div>
 
-    <div class="feature-card">
-      <i data-lucide="book-marked"></i>
-      <h3>Robin Sharma</h3>
-      <p>Motivational author.</p>
+    <div class="author-card">
+      <img src="images/image-1.jpg" alt="Author">
+      <h3>Paulo Coelho</h3>
+      <p>The Alchemist</p>
     </div>
 
   </div>
+
 </section>
 
 <!-- BOOKS -->
@@ -160,6 +213,7 @@
     </div>
 
   </div>
+
 </section>
 
 <!-- BEST SELLERS -->
@@ -189,9 +243,10 @@
     </div>
 
   </div>
+
 </section>
 
-<!-- REVIEWS (NEW SECTION) -->
+<!-- REVIEWS -->
 <section class="reviews">
 
   <h2 class="section-title">Reader Reviews</h2>
@@ -218,6 +273,7 @@
     </div>
 
   </div>
+
 </section>
 
 <!-- PRICING -->
@@ -249,17 +305,18 @@
     </div>
 
   </div>
+
 </section>
 
-<!-- APP SECTION (NEW) -->
+<!-- APP -->
 <section class="app-section">
 
   <h2 class="section-title">Download Our App</h2>
   <p class="section-text">Read books anytime anywhere.</p>
 
   <div class="hero-buttons">
-    <button class="primary-btn">Google Play</button>
-    <button class="secondary-btn">App Store</button>
+    <button class="secondary-btn ">Explore Books</button>
+    <button class=" primary-btn">Join Our Community</button>
   </div>
 
 </section>
@@ -277,8 +334,79 @@
 
 </section>
 
-<footer> <div class="footer-grid"> <div> <h3>Independent Bookstore</h3> <p> Discover amazing books from independent authors around the world. </p> <div class="social-icons"> <div class="social-icons"> <a href="https://instagram.com" target="_blank"> <i data-lucide="camera"></i> </a> <a href="https://twitter.com" target="_blank"> <i data-lucide="send"></i> </a> <a href="https://youtube.com" target="_blank"> <i data-lucide="play"></i> </a> <a href="https://linkedin.com" target="_blank"> <i data-lucide="briefcase"></i> </a> <a href="https://facebook.com" target="_blank"> <i data-lucide="users"></i> </a> </div> </div> </div> <div> <h3>Quick Links</h3> <a href="index.html">Home</a><br> <a href="about.html">About</a><br> <a href="books.html">Books</a><br> <a href="pricing.html">Pricing</a><br> <a href="contact.html">Contact</a> </div> <div> <h3>Categories</h3> <p>Fiction</p> <p>Business</p> <p>Technology</p> <p>Self Development</p> <p>Novels</p> </div> <div> <h3>Contact Info</h3> <p>Email: hr@techechosinnovation.com</p> <p>Phone: +91 9347657319</p> <p>Location: hyderabad, India</p> <p>Open: 9AM - 9PM</p> </div> </div> <div class="copyright"> <div class="copyright-line"></div> <p>© 2026 Independent Bookstore</p> <div class="middle-line"></div> <p>All Rights Reserved</p> <div class="copyright-line"></div> </div> </footer> <script src="index.js"></script> </body> </html>
+<!-- FOOTER -->
+<footer>
 
+  <div class="footer-grid">
+
+    <div>
+      <h3>Independent Bookstore</h3>
+      <p>Discover amazing books from independent authors around the world.</p>
+
+      <div class="social-icons">
+        <a href="#"><i data-lucide="camera"></i></a>
+        <a href="#"><i data-lucide="send"></i></a>
+        <a href="#"><i data-lucide="play"></i></a>
+        <a href="#"><i data-lucide="briefcase"></i></a>
+        <a href="#"><i data-lucide="users"></i></a>
+      </div>
+    </div>
+
+    <div class="Quick-Links">
+      <h3>Quick Links</h3>
+      <a href="#">Home</a><br>
+      <a href="#">About</a><br>
+      <a href="#">Books</a><br>
+      <a href="#">Pricing</a><br>
+      <a href="#">Contact</a>
+    </div>
+
+    <div>
+      <h3>Categories</h3>
+      <p>Fiction</p>
+      <p>Business</p>
+      <p>Technology</p>
+      <p>Self Development</p>
+      <p>Novels</p>
+    </div>
+
+    <div>
+      <h3>Contact Info</h3>
+      <p>Email: hr@techechosinnovation.com</p>
+      <p>Phone: +91 9347657319</p>
+      <p>Location: Hyderabad, India</p>
+      <p>Open: 9AM - 9PM</p>
+    </div>
+
+  </div>
+
+<div class="copyright">
+
+  <!-- LEFT -->
+  <div class="copyright-left">
+    <p>© 2026 Independent Bookstore. All rights reserved.</p>
+  </div>
+
+  <!-- RIGHT -->
+  <div class="copyright-right">
+
+    <a href="#">Privacy Policy</a>
+
+    <a href="#">Terms of Service</a>
+
+    <a href="#">Cookie Policy</a>
+
+    <a href="#" class="scroll-top">
+      <i data-lucide="chevron-up"></i>
+    </a>
+
+  </div>
+
+</div>
+
+</footer>
+
+<!-- SCRIPTS -->
 <script src="index.js"></script>
 <script>
   lucide.createIcons();

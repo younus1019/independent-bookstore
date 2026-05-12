@@ -1,18 +1,21 @@
-
 lucide.createIcons();
 
 
 // ============================
-// DARK MODE TOGGLE
+// THEME TOGGLE
 // ============================
 
 const themeToggle = document.getElementById("theme-toggle");
 
-themeToggle.addEventListener("click", () => {
+if (themeToggle) {
 
-  document.body.classList.toggle("dark-mode");
+  themeToggle.addEventListener("click", () => {
 
-});
+    document.body.classList.toggle("dark-mode");
+
+  });
+
+}
 
 
 // ============================
@@ -38,26 +41,29 @@ cartButtons.forEach((button) => {
 
 const newsletterForm = document.getElementById("newsletter-form");
 
-newsletterForm.addEventListener("submit", function(event){
+if (newsletterForm) {
 
-  event.preventDefault();
+  newsletterForm.addEventListener("submit", function (event) {
 
-  const email = document.getElementById("email").value;
+    event.preventDefault();
 
-  if(email === ""){
+    const emailInput = document.getElementById("email");
 
-    alert("Please Enter Your Email");
+    if (emailInput.value === "") {
 
-  }
-  else{
+      alert("Please Enter Your Email");
 
-    alert("Thank You For Subscribing!");
+    } else {
 
-    newsletterForm.reset();
+      alert("Thank You For Subscribing!");
 
-  }
+      newsletterForm.reset();
 
-});
+    }
+
+  });
+
+}
 
 
 // ============================
@@ -66,11 +72,15 @@ newsletterForm.addEventListener("submit", function(event){
 
 const loginButton = document.getElementById("login-btn");
 
-loginButton.addEventListener("click", () => {
+if (loginButton) {
 
-  alert("Login Feature Coming Soon!");
+  loginButton.addEventListener("click", () => {
 
-});
+    alert("Login Feature Coming Soon!");
+
+  });
+
+}
 
 
 // ============================
@@ -79,15 +89,19 @@ loginButton.addEventListener("click", () => {
 
 const startButton = document.getElementById("start-btn");
 
-startButton.addEventListener("click", () => {
+if (startButton) {
 
-  alert("Welcome To Independent Bookstore!");
+  startButton.addEventListener("click", () => {
 
-});
+    alert("Welcome To Independent Bookstore!");
+
+  });
+
+}
 
 
 // ============================
-// SMOOTH BUTTON EFFECT
+// BUTTON HOVER EFFECT
 // ============================
 
 const allButtons = document.querySelectorAll("button");
@@ -97,6 +111,7 @@ allButtons.forEach((button) => {
   button.addEventListener("mouseenter", () => {
 
     button.style.transform = "scale(1.05)";
+    button.style.transition = "0.3s";
 
   });
 
@@ -119,13 +134,16 @@ bookCards.forEach((card) => {
 
   card.addEventListener("mouseenter", () => {
 
+    card.style.transform = "translateY(-10px)";
+    card.style.transition = "0.3s";
     card.style.boxShadow = "0 10px 30px rgba(0,0,0,0.15)";
 
   });
 
   card.addEventListener("mouseleave", () => {
 
-    card.style.boxShadow = "0 4px 20px rgba(0,0,0,0.08)";
+    card.style.transform = "translateY(0)";
+    card.style.boxShadow = "0 5px 15px rgba(0,0,0,0.08)";
 
   });
 
@@ -133,22 +151,28 @@ bookCards.forEach((card) => {
 
 
 // ============================
-// SCROLL HEADER EFFECT
+// HEADER SCROLL EFFECT
 // ============================
 
 window.addEventListener("scroll", () => {
 
-  const header = document.querySelector("header");
+  const header = document.querySelector(".header");
 
-  if(window.scrollY > 50){
+  if (header) {
 
-    header.style.background = "#ffffff";
-    header.style.boxShadow = "0 4px 20px rgba(0,0,0,0.1)";
+    if (window.scrollY > 50) {
 
-  }
-  else{
+      header.style.background = "#ffffff";
+      header.style.boxShadow =
+        "0 4px 20px rgba(0,0,0,0.1)";
 
-    header.style.boxShadow = "0 2px 10px rgba(0,0,0,0.05)";
+    } else {
+
+      header.style.background = "#ffffff";
+      header.style.boxShadow =
+        "0 2px 10px rgba(0,0,0,0.05)";
+
+    }
 
   }
 
