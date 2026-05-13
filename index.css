@@ -150,6 +150,68 @@ NAVBAR
   width:100%;
 }
 
+/* =========================
+DROPDOWN MENU
+========================= */
+
+.dropdown{
+  position:relative;
+}
+
+.dropdown-menu{
+  position:absolute;
+
+  top:100%;
+  left:0;
+
+  background:white;
+
+  min-width:180px;
+
+  border-radius:12px;
+
+  padding:10px 0;
+
+  list-style:none;
+
+  box-shadow:0 10px 25px rgba(0,0,0,0.08);
+
+  opacity:0;
+  visibility:hidden;
+
+  transform:translateY(10px);
+
+  transition:0.3s ease;
+
+  z-index:999;
+}
+
+.dropdown-menu li{
+  width:100%;
+}
+
+.dropdown-menu li a{
+  display:block;
+
+  padding:12px 18px;
+
+  text-decoration:none;
+
+  color:var(--text-dark);
+
+  transition:0.3s ease;
+}
+
+.dropdown-menu li a:hover{
+  background:#fff0f5;
+  color:var(--primary);
+}
+
+.dropdown:hover .dropdown-menu{
+  opacity:1;
+  visibility:visible;
+  transform:translateY(0);
+}
 
 /* =========================
 HEADER BUTTONS
@@ -805,9 +867,7 @@ RESPONSIVE
     width:100%;
   }
 
-}
-
-
+}  
 
 
 
