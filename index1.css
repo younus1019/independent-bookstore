@@ -17,6 +17,10 @@ GLOBAL RESET
 html{
   scroll-behavior:smooth;
 }
+body.darkmode{
+    background-color: black;
+    color: white;
+}
 
 body{
   background:#fff5f8;

@@ -1,3 +1,8 @@
+javascript
+// ============================
+// LUCIDE ICONS
+// ============================
+
 lucide.createIcons();
 
 
@@ -19,10 +24,44 @@ if (themeToggle) {
 
 
 // ============================
-// ADD TO CART BUTTON
+// LOGIN BUTTON
 // ============================
 
-const cartButtons = document.querySelectorAll(".add-cart");
+const loginButton = document.querySelector(".login-btn");
+
+if (loginButton) {
+
+  loginButton.addEventListener("click", () => {
+
+    alert("Login Feature Coming Soon!");
+
+  });
+
+}
+
+
+// ============================
+// RTL BUTTON
+// ============================
+
+const rtlButton = document.querySelector(".rtl-btn");
+
+if (rtlButton) {
+
+  rtlButton.addEventListener("click", () => {
+
+    document.body.classList.toggle("rtl-mode");
+
+  });
+
+}
+
+
+// ============================
+// ADD TO CART BUTTONS
+// ============================
+
+const cartButtons = document.querySelectorAll(".book-card .primary-btn");
 
 cartButtons.forEach((button) => {
 
@@ -39,7 +78,7 @@ cartButtons.forEach((button) => {
 // NEWSLETTER FORM
 // ============================
 
-const newsletterForm = document.getElementById("newsletter-form");
+const newsletterForm = document.querySelector(".newsletter form");
 
 if (newsletterForm) {
 
@@ -47,9 +86,9 @@ if (newsletterForm) {
 
     event.preventDefault();
 
-    const emailInput = document.getElementById("email");
+    const emailInput = newsletterForm.querySelector("input");
 
-    if (emailInput.value === "") {
+    if (emailInput.value.trim() === "") {
 
       alert("Please Enter Your Email");
 
@@ -67,40 +106,6 @@ if (newsletterForm) {
 
 
 // ============================
-// LOGIN BUTTON
-// ============================
-
-const loginButton = document.getElementById("login-btn");
-
-if (loginButton) {
-
-  loginButton.addEventListener("click", () => {
-
-    alert("Login Feature Coming Soon!");
-
-  });
-
-}
-
-
-// ============================
-// GET STARTED BUTTON
-// ============================
-
-const startButton = document.getElementById("start-btn");
-
-if (startButton) {
-
-  startButton.addEventListener("click", () => {
-
-    alert("Welcome To Independent Bookstore!");
-
-  });
-
-}
-
-
-// ============================
 // BUTTON HOVER EFFECT
 // ============================
 
@@ -111,7 +116,7 @@ allButtons.forEach((button) => {
   button.addEventListener("mouseenter", () => {
 
     button.style.transform = "scale(1.05)";
-    button.style.transition = "0.3s";
+    button.style.transition = "0.3s ease";
 
   });
 
@@ -135,7 +140,7 @@ bookCards.forEach((card) => {
   card.addEventListener("mouseenter", () => {
 
     card.style.transform = "translateY(-10px)";
-    card.style.transition = "0.3s";
+    card.style.transition = "0.3s ease";
     card.style.boxShadow = "0 10px 30px rgba(0,0,0,0.15)";
 
   });
@@ -143,7 +148,7 @@ bookCards.forEach((card) => {
   card.addEventListener("mouseleave", () => {
 
     card.style.transform = "translateY(0)";
-    card.style.boxShadow = "0 5px 15px rgba(0,0,0,0.08)";
+    card.style.boxShadow = "0 10px 30px rgba(255,79,139,0.12)";
 
   });
 
@@ -168,12 +173,35 @@ window.addEventListener("scroll", () => {
 
     } else {
 
-      header.style.background = "#ffffff";
+      header.style.background = "rgba(255,245,248,0.97)";
       header.style.boxShadow =
-        "0 2px 10px rgba(0,0,0,0.05)";
+        "0 2px 10px rgba(0,0,0,0.04)";
 
     }
 
   }
 
 });
+
+
+// ============================
+// SCROLL TO TOP BUTTON
+// ============================
+
+const scrollTopBtn = document.querySelector(".scroll-top");
+
+if (scrollTopBtn) {
+
+  scrollTopBtn.addEventListener("click", (e) => {
+
+    e.preventDefault();
+
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth"
+    });
+
+  });
+
+}
+
