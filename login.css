@@ -1,0 +1,172 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family:'Poppins',sans-serif;
+}
+
+body{
+  height:100vh;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  background:#fff5f8;   /* your theme background */
+  color:#4a2c36;
+}
+
+/* BACKGROUND EFFECT */
+.bg{
+  position:absolute;
+  width:100%;
+  height:100%;
+  background:linear-gradient(135deg,#fff5f8,#ffdce8);
+  z-index:-1;
+}
+
+/* LOGIN WRAPPER */
+.login-wrapper{
+  display:flex;
+  justify-content:center;
+  align-items:center;
+}
+
+/* LOGIN CARD */
+.login-card{
+  width:360px;
+  background:#ffffff;
+  padding:30px;
+  border-radius:18px;
+  border:1px solid #ffc7d8;
+  box-shadow:0 10px 30px rgba(255,79,139,0.12);
+  color:#4a2c36;
+}
+
+/* LOGO */
+.logo{
+  font-size:22px;
+  font-weight:700;
+  display:flex;
+  align-items:center;
+  gap:8px;
+  margin-bottom:5px;
+}
+
+.logo span{
+  color:#ff4f8b; /* main accent */
+}
+
+.subtitle{
+  font-size:13px;
+  color:#7b5c66;
+  margin-bottom:20px;
+}
+
+/* LABEL */
+label{
+  font-size:12px;
+  color:#7b5c66;
+  display:block;
+  margin:10px 0 5px;
+}
+
+/* INPUT */
+input{
+  width:100%;
+  padding:10px;
+  border-radius:10px;
+  border:1px solid #ffc7d8;
+  background:#fff5f8;
+  color:#4a2c36;
+  outline:none;
+}
+
+input:focus{
+  border-color:#ff4f8b;
+}
+
+/* OPTIONS */
+.options{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  font-size:11px;
+  margin:10px 0 15px;
+}
+
+.options a{
+  color:#ff4f8b;
+  text-decoration:none;
+}
+
+/* MAIN BUTTON (same style as your site) */
+.login-btn{
+  width:100%;
+  padding:10px;
+  border:none;
+  border-radius:10px;
+  background:#ff4f8b;
+  color:white;
+  font-weight:600;
+  cursor:pointer;
+  transition:0.3s;
+}
+
+.login-btn:hover{
+  background:#e63d77;
+}
+
+/* DIVIDER */
+.divider{
+  text-align:center;
+  margin:15px 0;
+  font-size:11px;
+  color:#7b5c66;
+}
+
+/* SOCIAL BUTTONS */
+.google-btn,
+.apple-btn{
+  width:100%;
+  padding:10px;
+  margin-bottom:10px;
+  border:none;
+  border-radius:10px;
+  cursor:pointer;
+  font-weight:500;
+  border:1px solid #ffc7d8;
+}
+
+.google-btn{
+  background:#ffffff;
+  color:#4a2c36;
+}
+
+.apple-btn{
+  background:#4a2c36;
+  color:white;
+}
+
+/* SIGNUP */
+.signup{
+  text-align:center;
+  font-size:12px;
+  margin-top:10px;
+}
+
+.signup a{
+  color:#ff4f8b;
+  text-decoration:none;
+}
+
+.logo{
+  display:flex;
+  align-items:center;
+  gap:10px;
+}
+
+.logo img{
+  width:40px;      /* controls size */
+  height:40px;     /* keeps it square */
+  object-fit:cover;
+  border-radius:50%; /* optional circle look */
+}

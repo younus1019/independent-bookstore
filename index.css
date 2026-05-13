@@ -240,6 +240,10 @@ HEADER BUTTONS
   transition:0.3s ease;
 }
 
+.login-btn a{
+  text-decoration: none;
+  color:brown;
+}
 
 /* THEME BUTTON */
 .theme-btn{
@@ -793,7 +797,7 @@ RESPONSIVE
 
     gap:14px;
 
-    padding:16px 5%;
+    padding:16px 5%; 
   }
 
   .navbar{
@@ -867,7 +871,7 @@ RESPONSIVE
     width:100%;
   }
 
-}  
+}
 
 
 

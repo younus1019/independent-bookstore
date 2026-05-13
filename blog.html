@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Pagely Blog</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="./blog.css">
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <link rel="icon" type="image/png" href="images/logo for website.jpg">
+</head>
+
+<body>
+
+  <!-- HEADER -->
+  <header class="header">
+    <div class="logo">
+      <img src="images/logo for website.jpg" alt="Logo">
+      <h2>Pagely <span>Bookstore</span></h2>
+    </div>
+    <nav class="navbar">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="blog.html" class="active">Blog</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#pricing">Pricing</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+    <div class="header-buttons">
+      <button class="theme-btn" id="theme-toggle"><i data-lucide="moon"></i></button>
+      <button class="login-btn">Login</button>
+    </div>
+  </header>
+
+  <!-- BLOG HERO -->
+  <section class="hero blog-hero">
+    <div class="hero-text">
+      <h1>Welcome to Our <span>Blog</span></h1>
+      <p>Insights, reviews, and stories from the world of books.</p>
+    </div>
+  </section>
+
+  <!-- BLOG POSTS -->
+  <section class="blog-section" id="blog">
+    <h2 class="section-title">Latest Articles</h2>
+    <p class="section-text">Stay updated with our book reviews, author interviews, and reading tips.</p>
+
+    <div class="blog-grid">
+      <!-- Blog Card -->
+      <div class="blog-card">
+        <img src="images/image-4.jpg" alt="Blog Post">
+        <div class="blog-content">
+          <h3>Top 10 Must-Read Books of 2026</h3>
+          <p>Discover the most impactful books released this year.</p>
+          <a href="post1.html" class="primary-btn">Read More</a>
+        </div>
+      </div>
+
+      <div class="blog-card">
+        <img src="images/image-2.jpg" alt="Blog Post">
+        <div class="blog-content">
+          <h3>Interview with Paulo Coelho</h3>
+          <p>The Alchemist author shares his thoughts on creativity.</p>
+          <a href="post2.html" class="primary-btn">Read More</a>
+        </div>
+      </div>
+
+      <div class="blog-card">
+        <img src="images/image-6.jpg" alt="Blog Post">
+        <div class="blog-content">
+          <h3>How to Build a Reading Habit</h3>
+          <p>Tips and tricks to make reading a daily joy.</p>
+          <a href="post3.html" class="primary-btn">Read More</a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- FEATURED BOOKS -->
+<section class="featured-books">
+  <h2 class="section-title">Featured Books</h2>
+  <p class="section-text">Handpicked reads loved by our community.</p>
+
+  <div class="featured-grid">
+
+    <div class="featured-card">
+      <img src="images/image-1.jpg" alt="">
+      <h3>The Silent Patient</h3>
+      <p>Psychological thriller that keeps you hooked.</p>
+      <span class="tag">Best Seller</span>
+    </div>
+
+    <div class="featured-card">
+      <img src="images/image-2.jpg" alt="">
+      <h3>Atomic Habits</h3>
+      <p>Build better habits, change your life.</p>
+      <span class="tag">Top Rated</span>
+    </div>
+
+    <div class="featured-card">
+      <img src="images/image-3.jpg" alt="">
+      <h3>Deep Work</h3>
+      <p>Master focus in a distracted world.</p>
+      <span class="tag">Editor Pick</span>
+    </div>
+
+  </div>
+</section>
+
+
+<!-- AUTHOR SPOTLIGHT -->
+<!-- AUTHOR SPOTLIGHT -->
+<section class="author-section">
+  <h2 class="section-title">Author Spotlight</h2>
+  <p class="section-text">Meet inspiring authors behind great stories.</p>
+
+  <div class="author-grid">
+
+    <!-- AUTHOR 1 -->
+    <div class="author-card">
+      <img src="images/author-image-1.jpg" alt="Paulo Coelho">
+      <h3>Paulo Coelho</h3>
+      <p>Author of "The Alchemist" inspiring millions worldwide.</p>
+    </div>
+
+    <!-- AUTHOR 2 -->
+    <div class="author-card">
+      <img src="images/author-image-2.jpg" alt="J K Rowling">
+      <h3>J. K. Rowling</h3>
+      <p>Creator of the magical Harry Potter series loved globally.</p>
+    </div>
+
+    <!-- AUTHOR 3 -->
+    <div class="author-card">
+      <img src="images/author-image-3.jpg" alt="George R R Martin">
+      <h3>George R. R. Martin</h3>
+      <p>Author of Game of Thrones epic fantasy universe.</p>
+    </div>
+
+  </div>
+</section>
+
+
+<!-- NEWSLETTER -->
+<section class="newsletter-section">
+  <h2 class="section-title">Join Our Reading Community</h2>
+  <p class="section-text">Get weekly book recommendations & updates.</p>
+
+  <form class="newsletter-form">
+    <input type="email" placeholder="Enter your email">
+    <button class="primary-btn">Subscribe</button>
+  </form>
+</section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-grid">
+      <div>
+        <h3>Independent Bookstore</h3>
+        <p>Discover amazing books from independent authors around the world.</p>
+      </div>
+      <div>
+        <h3>Quick Links</h3>
+        <a href="index.html">Home</a><br>
+        <a href="blog.html">Blog</a><br>
+        <a href="#pricing">Pricing</a><br>
+        <a href="#contact">Contact</a>
+      </div>
+      <div>
+        <h3>Categories</h3>
+        <p>Fiction</p>
+        <p>Business</p>
+        <p>Technology</p>
+        <p>Self Development</p>
+      </div>
+      <div>
+        <h3>Contact Info</h3>
+        <p>Email: hr@techechosinnovation.com</p>
+        <p>Phone: +91 9347657319</p>
+        <p>Location: Hyderabad, India</p>
+      </div>
+    </div>
+    <div class="copyright">
+      <p>© 2026 Pagely Bookstore. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <script>
+    lucide.createIcons();
+  </script>
+</body>
+</html>

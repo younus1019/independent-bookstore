@@ -1,0 +1,134 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family:'Poppins',sans-serif;
+}
+
+/* BODY */
+body{
+  display:flex;
+  background:#fff5f8;
+  color:#4a2c36;
+}
+
+/* SIDEBAR */
+.sidebar{
+  width:220px;
+  background:#ff4f8b;
+  color:white;
+  height:100vh;
+  padding:20px;
+  position:fixed;
+}
+
+.sidebar h2{
+  margin-bottom:20px;
+}
+
+.sidebar ul{
+  list-style:none;
+}
+
+.sidebar ul li{
+  padding:10px 0;
+  cursor:pointer;
+}
+
+/* MAIN */
+.main{
+  margin-left:220px;
+  padding:20px;
+  width:100%;
+}
+
+/* TOPBAR */
+.topbar{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  background:white;
+  padding:15px;
+  border-radius:10px;
+  box-shadow:0 10px 30px rgba(255,79,139,0.12);
+}
+
+/* STATS */
+.stats{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+  gap:15px;
+  margin-top:20px;
+}
+
+.card{
+  background:white;
+  padding:20px;
+  border-radius:12px;
+  text-align:center;
+  box-shadow:0 10px 30px rgba(255,79,139,0.12);
+}
+
+/* SECTION TITLE */
+.section-title{
+  margin:25px 0 10px;
+}
+
+/* BOOK GRID */
+.grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(150px,1fr));
+  gap:15px;
+}
+
+.book-card{
+  background:white;
+  padding:40px;
+  border-radius:12px;
+  text-align:center;
+  box-shadow:0 10px 30px rgba(255,79,139,0.12);
+}
+
+/* CATEGORIES */
+.categories{
+  display:flex;
+  flex-wrap:wrap;
+  gap:10px;
+}
+
+.categories div{
+  background:#ff4f8b;
+  color:white;
+  padding:10px 15px;
+  border-radius:20px;
+}
+
+/* AUTHORS */
+.authors{
+  display:flex;
+  gap:15px;
+}
+
+.author{
+  flex:1;
+  background:white;
+  padding:20px;
+  border-radius:12px;
+  text-align:center;
+}
+
+/* ACTIVITY */
+.activity{
+  background:white;
+  padding:15px;
+  border-radius:12px;
+}
+
+/* FOOTER */
+footer{
+  margin-top:30px;
+  text-align:center;
+  padding:15px;
+  background:white;
+  border-radius:10px;
+}
