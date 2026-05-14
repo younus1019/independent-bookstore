@@ -1,177 +1,351 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Contact | Pagely Bookstore</title>
 
-<title>Pagely Bookstore</title>
+  <link rel="stylesheet" href="contact.css">
 
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="contact.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <script src="https://unpkg.com/lucide@latest"></script>
 </head>
 
 <body>
 
-<!-- ================= NAVBAR ================= -->
-<header class="navbar">
-  <div class="container">
+<!-- =========================================
+HEADER
+========================================= -->
 
-    <div class="logo">📚 Pagely Bookstore</div>
+<header class="header">
 
-    <nav class="nav-links">
-      <a href="index.html">Home</a>
-      <a href="index2.html">About</a>
-      <a href="index3.html">Services</a>
-      <a href="blog.html">Blog</a>
-      <a href="pricing.html">pricing</a>
-      <a href="contact.html">Contact</a>
-      <a href="dashboard.html">Dashboard</a>
-    </nav>
+  <!-- LOGO -->
+  <div class="logo">
 
-    <div class="nav-actions">
-      <a class="btn-outline" href="#">Explore</a>
-      <a class="btn-primary" href="#">Browse Books</a>
-    </div>
+    <img src="images/logo for website.jpg" alt="Logo">
+
+    <h2>
+      Pagely <span>Bookstore</span>
+    </h2>
 
   </div>
+
+  <!-- NAVIGATION -->
+  <nav class="navbar">
+
+    <ul>
+
+      <li class="dropdown">
+
+        <a href="index.html">
+          Home ▾
+        </a>
+
+        <ul class="dropdown-menu">
+
+          <li><a href="index.html">Home 1</a></li>
+
+          <li><a href="home2.html">Home 2</a></li>
+
+        </ul>
+
+      </li>
+
+      <li><a href="./about.html">About</a></li>
+
+      <li><a href="./service.html">Services</a></li>
+
+      <li><a href="./blog.html">Blog</a></li>
+
+      <li><a href="./pricing.html">Pricing</a></li>
+
+      <li><a class="active" href="./contact.html">Contact</a></li>
+
+      <li><a href="./dashboard.html">Dashboard</a></li>
+
+    </ul>
+
+  </nav>
+
+  <!-- RIGHT BUTTONS -->
+  <div class="header-buttons">
+
+    <button class="theme-btn" id="theme-toggle">
+      <i data-lucide="moon"></i>
+    </button>
+
+    <button class="rtl-btn">
+      RTL
+    </button>
+
+    <a href="./login.html" class="login-btn">
+      Login
+    </a>
+
+  </div>
+
 </header>
 
-<!-- ================= HERO ================= -->
-<section class="hero">
-  <div class="hero-content">
+<!-- =========================================
+CONTACT HERO
+========================================= -->
 
-    <h1>Discover Your Next Favorite Book</h1>
+<section class="contact-hero">
+
+  <div class="contact-hero-content">
+
+    <h1>Get In Touch</h1>
 
     <p>
-      Explore thousands of books from independent authors and publishers around the world.
+      We'd love to hear from you. Reach out for book recommendations,
+      partnerships, events, or anything related to Pagely Bookstore.
     </p>
 
-    <div class="hero-buttons">
-      <a href="#" class="btn-primary">Browse Books</a>
-      <a href="#" class="btn-outline">Join Community</a>
+  </div>
+
+</section>
+
+<!-- =========================================
+CONTACT SECTION
+========================================= -->
+
+<section class="contact-section">
+
+  <!-- LEFT -->
+  <div class="contact-info">
+
+    <span class="tag">Contact Us</span>
+
+    <h2>
+      Let’s Start A Conversation
+    </h2>
+
+    <p>
+      Whether you're searching for your next favorite read or want to
+      collaborate with our bookstore, our team is here to help.
+    </p>
+
+    <div class="info-box">
+
+      <div class="icon">
+        <i data-lucide="mail"></i>
+      </div>
+
+      <div>
+        <h3>Email</h3>
+        <p>hr@techechosinnovation.com</p>
+      </div>
+
+    </div>
+
+    <div class="info-box">
+
+      <div class="icon">
+        <i data-lucide="phone"></i>
+      </div>
+
+      <div>
+        <h3>Phone</h3>
+        <p>+91 9347657319</p>
+      </div>
+
+    </div>
+
+    <div class="info-box">
+
+      <div class="icon">
+        <i data-lucide="map-pin"></i>
+      </div>
+
+      <div>
+        <h3>Location</h3>
+        <p>Hyderabad, India</p>
+      </div>
+
     </div>
 
   </div>
-</section>
 
-<!-- ================= FEATURES ================= -->
-<section class="section">
-  <h2 class="title">Why Choose Us</h2>
+  <!-- RIGHT -->
+  <div class="contact-form-box">
 
-  <div class="grid">
+    <form>
 
-    <div class="card">
-      <h3>Huge Collection</h3>
-      <p>Thousands of books across all genres.</p>
-    </div>
+      <div class="input-row">
 
-    <div class="card">
-      <h3>Fast Delivery</h3>
-      <p>Quick and safe delivery at your doorstep.</p>
-    </div>
+        <div class="input-group">
+          <label>First Name</label>
+          <input type="text" placeholder="Enter first name">
+        </div>
 
-    <div class="card">
-      <h3>Reading Community</h3>
-      <p>Connect with book lovers worldwide.</p>
-    </div>
+        <div class="input-group">
+          <label>Last Name</label>
+          <input type="text" placeholder="Enter last name">
+        </div>
 
-  </div>
-</section>
+      </div>
 
-<!-- ================= AUTHORS ================= -->
-<section class="section alt">
-  <h2 class="title">Popular Authors</h2>
+      <div class="input-row">
 
-  <div class="grid">
+        <div class="input-group">
+          <label>Email Address</label>
+          <input type="email" placeholder="Enter your email">
+        </div>
 
-    <div class="card">James Clear</div>
-    <div class="card">Robert Kiyosaki</div>
-    <div class="card">Morgan Housel</div>
-    <div class="card">Paulo Coelho</div>
+        <div class="input-group">
+          <label>Phone Number</label>
+          <input type="text" placeholder="Enter phone number">
+        </div>
 
-  </div>
-</section>
+      </div>
 
-<!-- ================= BOOKS ================= -->
-<section class="section">
-  <h2 class="title">Featured Books</h2>
+      <div class="input-group">
+        <label>Subject</label>
+        <input type="text" placeholder="Enter subject">
+      </div>
 
-  <div class="grid">
+      <div class="input-group">
+        <label>Message</label>
+        <textarea placeholder="Write your message..."></textarea>
+      </div>
 
-    <div class="card">Atomic Habits</div>
-    <div class="card">Rich Dad Poor Dad</div>
-    <div class="card">Psychology of Money</div>
+      <button type="submit" class="submit-btn">
+        Send Message
+      </button>
 
-  </div>
-</section>
-
-<!-- ================= BEST SELLERS ================= -->
-<section class="section alt">
-  <h2 class="title">Best Sellers</h2>
-
-  <div class="grid">
-    <div class="card">Think Like a Monk</div>
-    <div class="card">Deep Work</div>
-    <div class="card">The Alchemist</div>
-  </div>
-</section>
-
-<!-- ================= PRICING ================= -->
-<section class="section">
-  <h2 class="title">Membership Plans</h2>
-
-  <div class="grid">
-
-    <div class="card">
-      <h3>Basic</h3>
-      <p>$10</p>
-    </div>
-
-    <div class="card highlight">
-      <h3>Popular</h3>
-      <p>$25</p>
-    </div>
-
-    <div class="card">
-      <h3>Premium</h3>
-      <p>$40</p>
-    </div>
+    </form>
 
   </div>
+
 </section>
 
-<!-- ================= FOOTER ================= -->
-<footer class="footer">
+<!-- =========================================
+MAP SECTION
+========================================= -->
+
+<section class="map-section">
+
+  <!-- LEFT IMAGE -->
+  <div class="map-image">
+
+    <img src="https://images.unsplash.com/photo-1526778548025-fa2f459cd5c1?q=80&w=1600&auto=format&fit=crop" alt="Map">
+
+  </div>
+
+  <!-- RIGHT MAP -->
+  <div class="map-box">
+
+    
+      
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3806.156313024641!2d78.38820787516639!3d17.45223098344607!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb913aa8118e95%3A0xafc9ec950d04b87b!2sTechechos%20Innovation!5e0!3m2!1sen!2sin!4v1778738050297!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      
+    
+
+  </div>
+
+</section>
+
+<!-- =========================================
+FOOTER
+========================================= -->
+
+<footer>
 
   <div class="footer-grid">
 
     <div>
-      <h3>Pagely Bookstore</h3>
-      <p>Discover books that inspire and educate.</p>
+
+      <h3>Independent Bookstore</h3>
+
+      <p>
+        Discover amazing books from independent authors around the world.
+      </p>
+
+      <div class="social-icons">
+
+        <a href="#"><i data-lucide="camera"></i></a>
+
+        <a href="#"><i data-lucide="send"></i></a>
+
+        <a href="#"><i data-lucide="play"></i></a>
+
+        <a href="#"><i data-lucide="briefcase"></i></a>
+
+        <a href="#"><i data-lucide="users"></i></a>
+
+      </div>
+
     </div>
 
-    <div>
+    <div class="Quick-Links">
+
       <h3>Quick Links</h3>
-      <p>Home</p>
-      <p>About</p>
-      <p>Books</p>
-      <p>Contact</p>
+
+      <a href="#">Home</a>
+      <a href="#">About</a>
+      <a href="#">Books</a>
+      <a href="#">Pricing</a>
+      <a href="#">Contact</a>
+
     </div>
 
     <div>
-      <h3>Contact</h3>
-      <p>Hyderabad</p>
-      <p>+91 9347657319</p>
-      <p>hr@techechosinnovation.com</p>
+
+      <h3>Categories</h3>
+
+      <p>Fiction</p>
+      <p>Business</p>
+      <p>Technology</p>
+      <p>Self Development</p>
+      <p>Novels</p>
+
+    </div>
+
+    <div>
+
+      <h3>Contact Info</h3>
+
+      <p>Email: hr@techechosinnovation.com</p>
+
+      <p>Phone: +91 9347657319</p>
+
+      <p>Location: Hyderabad, India</p>
+
+      <p>Open: 9AM - 9PM</p>
+
     </div>
 
   </div>
 
-  <div class="bottom">
-    © 2026 Pagely Bookstore
+  <div class="copyright">
+
+    <div class="copyright-left">
+      <p>© 2026 Independent Bookstore. All rights reserved.</p>
+    </div>
+
+    <div class="copyright-right">
+
+      <a href="#">Privacy Policy</a>
+
+      <a href="#">Terms of Service</a>
+
+      <a href="#">Cookie Policy</a>
+
+      <a href="#" class="scroll-top">
+        <i data-lucide="chevron-up"></i>
+      </a>
+
+    </div>
+
   </div>
 
 </footer>
+
+<script>
+  lucide.createIcons();
+</script>
 
 </body>
 </html>

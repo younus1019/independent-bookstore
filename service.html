@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Services - pagely bookstore</title>
 
-  <link rel="stylesheet" href="index3.css">
+  <link rel="stylesheet" href="service.css">
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
   <script src="https://unpkg.com/lucide@latest"></script>
 </head>
@@ -15,26 +15,88 @@
 <!-- NAVBAR -->
 <header class="header">
 
+  <!-- LOGO -->
   <div class="logo">
-    <h2>pagely bookstore</h2>
+
+    <img src="images/logo for website.jpg" alt="Logo">
+
+    <h2>
+      Pagely <span>Bookstore</span>
+    </h2>
+
   </div>
 
+
+  <!-- NAVIGATION -->
   <nav class="navbar">
+
     <ul>
-      <li><a href="index.html">Home</a></li>
-      <li><a href="#">Store</a></li>
-      <li><a href="about.html">About</a></li>
-      <li><a class="active" href="services.html">Services</a></li>
-      <li><a href="#">Blog</a></li>
-      <li><a href="#">Contact</a></li>
-      <li><a href="#">Dashboard</a></li>
+
+      <!-- HOME DROPDOWN -->
+      <li class="dropdown">
+
+        <a href="index.html">
+          Home ▾
+        </a>
+
+        <ul class="dropdown-menu">
+
+          <li>
+            <a href="index.html">Home 1</a>
+          </li>
+
+          <li>
+            <a href="home2.html">Home 2</a>
+          </li>
+
+        </ul>
+
+      </li>
+
+      <li><a href="./about.html">About</a></li>
+
+      <li><a href="./service.html">Services</a></li>
+
+      <li><a href="./blog.html">Blog</a></li>
+
+      <li><a href="./pricing.html">Pricing</a></li>
+
+      <li><a href="./contact.html">Contact</a></li>
+
+      <li><a href="./dashboard.html">Dashboard</a></li>
+
     </ul>
+
   </nav>
 
-  <div class="right">
-    <button>RTL</button>
-    <button>🌙</button>
-    <button class="signin">Sign In</button>
+
+  <!-- RIGHT BUTTONS -->
+  <div class="header-buttons">
+
+    <!-- THEME BUTTON -->
+    <button class="theme-btn" id="theme-toggle">
+
+      <i data-lucide="moon"></i>
+
+    </button>
+
+
+    <!-- RTL BUTTON -->
+    <button class="rtl-btn">
+
+      RTL
+
+    </button>
+
+
+    <!-- LOGIN BUTTON -->
+
+    <button class="login-btn">
+
+      <a href="./login.html">Login</a> 
+
+    </button>
+
   </div>
 
 </header>
@@ -298,31 +360,69 @@
   <div class="footer-grid">
 
     <div>
-      <h3>The Shelf</h3>
-      <p>Independent literary destination with curated books and cozy spaces.</p>
+      <h3>Independent Bookstore</h3>
+      <p>Discover amazing books from independent authors around the world.</p>
+
+      <div class="social-icons">
+        <a href="#"><i data-lucide="camera"></i></a>
+        <a href="#"><i data-lucide="send"></i></a>
+        <a href="#"><i data-lucide="play"></i></a>
+        <a href="#"><i data-lucide="briefcase"></i></a>
+        <a href="#"><i data-lucide="users"></i></a>
+      </div>
+    </div>
+
+    <div class="Quick-Links">
+      <h3>Quick Links</h3>
+      <a href="#">Home</a><br>
+      <a href="#">About</a><br>
+      <a href="#">Books</a><br>
+      <a href="#">Pricing</a><br>
+      <a href="#">Contact</a>
     </div>
 
     <div>
-      <h3>Explore</h3>
-      <p>Home</p>
-      <p>Bookshop</p>
-      <p>Membership</p>
-      <p>Blog</p>
+      <h3>Categories</h3>
+      <p>Fiction</p>
+      <p>Business</p>
+      <p>Technology</p>
+      <p>Self Development</p>
+      <p>Novels</p>
     </div>
 
     <div>
-      <h3>Support</h3>
-      <p>Contact</p>
-      <p>Shipping</p>
-      <p>Privacy</p>
-      <p>Terms</p>
+      <h3>Contact Info</h3>
+      <p>Email: hr@techechosinnovation.com</p>
+      <p>Phone: +91 9347657319</p>
+      <p>Location: Hyderabad, India</p>
+      <p>Open: 9AM - 9PM</p>
     </div>
 
   </div>
 
-  <div class="copyright">
-    © 2026 pagely Bookstore. All rights reserved.
+<div class="copyright">
+
+  <!-- LEFT -->
+  <div class="copyright-left">
+    <p>© 2026 Independent Bookstore. All rights reserved.</p>
   </div>
+
+  <!-- RIGHT -->
+  <div class="copyright-right">
+
+    <a href="#">Privacy Policy</a>
+
+    <a href="#">Terms of Service</a>
+
+    <a href="#">Cookie Policy</a>
+
+    <a href="#" class="scroll-top">
+      <i data-lucide="chevron-up"></i>
+    </a>
+
+  </div>
+
+</div>
 
 </footer>
 
