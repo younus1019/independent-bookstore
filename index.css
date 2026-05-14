@@ -184,6 +184,7 @@ DROPDOWN MENU
   transition:0.3s ease;
 
   z-index:999;
+  
 }
 
 .dropdown-menu li{
@@ -873,6 +874,187 @@ RESPONSIVE
 
 }
 
+
+.app-section{
+  padding:80px 20px;
+  background:linear-gradient(135deg,#ff8fb7,#ff4f8b);
+  text-align:center;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  justify-content:center;
+}
+
+/* text */
+.app-section h2{
+  color:white;
+  font-size:36px;
+  margin-bottom:10px;
+}
+
+.app-section p{
+  color:white;
+  margin-bottom:25px;
+  font-size:16px;
+}
+
+/* BUTTON WRAPPER */
+.app-section .hero-buttons{
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  gap:15px;
+  flex-wrap:wrap;
+}
+
+/* BUTTON FIX (IMPORTANT) */
+.app-section .primary-btn,
+.app-section .secondary-btn{
+  padding:12px 20px;
+  border-radius:10px;
+  font-weight:600;
+}
+
+
+
+/* =========================
+POPULAR COLLECTIONS (MODERN GRID)
+========================= */
+
+.timeline {
+  background: #fff8fb;
+}
+
+/* title */
+.section-title {
+  text-align: center;
+  font-size: 45px;
+  margin-bottom: 60px;
+  color: #4a2c36;
+}
+
+/* container becomes grid instead of timeline */
+.timeline-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+  max-width: 1100px;
+  margin: auto;
+}
+
+/* remove timeline line completely */
+.timeline-container::after {
+  display: none;
+}
+
+/* box becomes normal card */
+.timeline-box {
+  width: 100%;
+  position: static;
+  padding: 0;
+}
+
+/* card style */
+.timeline-content {
+  background: white;
+  padding: 25px;
+  border-radius: 25px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.06);
+  transition: 0.3s ease;
+}
+
+/* hover effect */
+.timeline-content:hover {
+  transform: translateY(-8px);
+}
+
+/* image */
+.timeline-box img {
+  width: 100%;
+  height: 230px;
+  object-fit: cover;
+  border-radius: 20px;
+  margin-bottom: 15px;
+}
+
+/* heading */
+.timeline-box h3 {
+  margin-bottom: 10px;
+  font-size: 22px;
+  color: #4a2c36;
+}
+
+
+/* =========================
+POPULAR AUTHORS (MODERN CARD + HORIZONTAL SCROLL)
+========================= */
+
+.authors {
+  background: #fff8fb;
+  padding: 90px 8%;
+}
+
+.authors h2 {
+  text-align: center;
+  font-size: 45px;
+  margin-bottom: 60px;
+  color: #4a2c36;
+}
+
+/* horizontal scroll container */
+.authors-row {
+  display: flex;
+  gap: 25px;
+  overflow-x: auto;
+  padding-bottom: 10px;
+  scroll-snap-type: x mandatory;
+}
+
+/* hide scrollbar (optional clean look) */
+.authors-row::-webkit-scrollbar {
+  display: none;
+}
+
+/* author card */
+.author-card {
+  min-width: 220px;
+  background: white;
+  border-radius: 25px;
+  padding: 25px;
+  text-align: center;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.06);
+  scroll-snap-align: start;
+  transition: 0.3s ease;
+}
+
+/* hover effect */
+.author-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 15px 35px rgba(255,79,139,0.2);
+}
+
+/* author image */
+.author-card img {
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 15px;
+  border: 3px solid #ff4f8b;
+}
+
+/* name */
+.author-card h3 {
+  margin-bottom: 5px;
+  font-size: 18px;
+  color: #4a2c36;
+}
+
+/* role */
+.author-card p {
+  color: #777;
+  font-size: 14px;
+}
 
 
 

@@ -7,7 +7,7 @@ const header = document.querySelector(".header");
 
 // create mobile button dynamically
 const menuBtn = document.createElement("button");
-menuBtn.innerHTML = "☰";
+menuBtn.innerHTML = "";
 menuBtn.classList.add("menu-btn");
 header.appendChild(menuBtn);
 

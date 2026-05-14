@@ -1,3 +1,7 @@
+/* =========================
+RESET + BASE
+========================= */
+
 *{
   margin:0;
   padding:0;
@@ -11,7 +15,6 @@ body{
   overflow-x:hidden;
 }
 
-/* THEME COLORS */
 :root{
 
   --primary:#ff4f8b;
@@ -28,7 +31,6 @@ body{
   --border:#ffc7d8;
 
   --shadow:0 10px 30px rgba(255,79,139,0.12);
-
 }
 
 /* =========================
@@ -37,7 +39,7 @@ NAVBAR
 
 .header{
   display:flex;
-  justify-content:space-between;
+  justify-content:flex-start;
   align-items:center;
 
   padding:15px 8%;
@@ -53,19 +55,17 @@ NAVBAR
   backdrop-filter:blur(10px);
 
   box-shadow:0 2px 10px rgba(0,0,0,0.05);
+
+  gap:20px;
 }
 
+/* LOGO */
 .logo{
   display:flex;
   align-items:center;
   gap:10px;
-}
 
-.logo img{
-  width:45px;
-  height:45px;
-  border-radius:50%;
-  object-fit:cover;
+  flex-shrink:0;
 }
 
 .logo h2{
@@ -73,32 +73,56 @@ NAVBAR
   font-size:24px;
 }
 
-.logo span{
-  color:var(--primary);
+/* NAVBAR */
+.navbar{
+  flex:1;
+
+  display:flex;
+  justify-content:center;
 }
 
-.navbar ul{
+
+.navbar > ul{
   display:flex;
+  align-items:center;
+
   list-style:none;
-  gap:20px;
+
+  gap:16px;
+
+  flex-wrap:nowrap;
+}
+
+.header-buttons{
+  display:flex;
+  align-items:center;
+  gap:10px;
 }
 
 .navbar a{
   text-decoration:none;
   color:var(--text-light);
+
   font-weight:500;
+
   transition:0.3s ease;
+
   position:relative;
 }
 
 .navbar a::after{
   content:"";
+
   position:absolute;
+
   left:0;
   bottom:-5px;
+
   width:0;
   height:2px;
+
   background:var(--primary);
+
   transition:0.3s ease;
 }
 
@@ -111,23 +135,96 @@ NAVBAR
   width:100%;
 }
 
-.right-btns button{
-  margin-left:10px;
-  padding:10px 16px;
+/* DROPDOWN */
+.dropdown{
+  position:relative;
+}
+
+.dropdown-menu{
+  position:absolute;
+
+  top:100%;
+  left:0;
+
+  background:white;
+
+  min-width:160px;
+
+  list-style:none;
+
+  border-radius:10px;
+
+  padding:10px 0;
+
+  display:none;
+
+  box-shadow:0 10px 20px rgba(0,0,0,0.08);
+}
+
+.dropdown-menu li{
+  padding:10px 18px;
+}
+
+.dropdown-menu li a{
+  color:var(--text-dark);
+}
+
+.dropdown:hover .dropdown-menu{
+  display:block;
+}
+
+/* RIGHT BUTTONS */
+.header-buttons{
+  display:flex;
+  align-items:center;
+
+  gap:10px;
+
+  flex-shrink:0;
+}
+
+.theme-btn,
+.rtl-btn,
+.login-btn{
+  padding:9px 14px;
 
   border:none;
   border-radius:10px;
 
-  background:var(--primary);
-  color:white;
-
   cursor:pointer;
+
+  font-size:13px;
+  font-weight:600;
 
   transition:0.3s ease;
 }
 
-.right-btns button:hover{
-  background:var(--primary-hover);
+/* THEME */
+.theme-btn{
+  background:#ffe3ec;
+  color:var(--primary);
+}
+
+/* RTL */
+.rtl-btn{
+  background:white;
+
+  border:1px solid var(--primary);
+
+  color:var(--primary);
+}
+
+/* LOGIN */
+.login-btn{
+  background:var(--primary);
+
+  color:white;
+
+  text-decoration:none;
+
+  display:flex;
+  align-items:center;
+  justify-content:center;
 }
 
 /* =========================
@@ -137,7 +234,6 @@ HERO
 .hero{
   text-align:center;
   padding:100px 8%;
-
   background:linear-gradient(to right,#fff5f8,#ffe3ec);
 }
 
@@ -200,9 +296,7 @@ MISSION
   width:100%;
   height:450px;
   object-fit:cover;
-
   border-radius:20px;
-
   box-shadow:var(--shadow);
 }
 
@@ -252,11 +346,8 @@ VALUES
   background:white;
   padding:30px;
   border-radius:20px;
-
   border:1px solid var(--border);
-
   box-shadow:var(--shadow);
-
   transition:0.3s ease;
 }
 
@@ -283,11 +374,8 @@ STATS
   justify-content:space-around;
   flex-wrap:wrap;
   gap:25px;
-
   padding:80px 8%;
-
   background:linear-gradient(135deg,#ff8fb7,#ff4f8b);
-
   text-align:center;
 }
 
@@ -336,11 +424,8 @@ TEAM
   background:white;
   padding:25px;
   border-radius:25px;
-
   text-align:center;
-
   box-shadow:var(--shadow);
-
   transition:0.3s ease;
 }
 
@@ -356,15 +441,6 @@ TEAM
   margin-bottom:18px;
 }
 
-.team-card h3{
-  color:var(--text-dark);
-  margin-bottom:8px;
-}
-
-.team-card p{
-  color:var(--text-light);
-}
-
 /* =========================
 CTA
 ========================= */
@@ -372,9 +448,7 @@ CTA
 .cta{
   text-align:center;
   padding:90px 8%;
-
   background:linear-gradient(135deg,#ff8fb7,#ff4f8b);
-
   color:white;
 }
 
@@ -392,14 +466,10 @@ CTA
 .cta button{
   padding:14px 22px;
   margin:10px;
-
   border:none;
   border-radius:12px;
-
   cursor:pointer;
-
   font-weight:600;
-
   transition:0.3s ease;
 }
 
@@ -456,45 +526,11 @@ footer{
 }
 
 .copyright{
-  text-align:center;
+  text-align:left;
   margin-top:35px;
   padding-top:20px;
-
   border-top:1px solid rgba(0,0,0,0.08);
-
   color:var(--text-light);
-}
-
-/* =========================
-MOBILE MENU
-========================= */
-
-.menu-btn{
-  display:none;
-  font-size:24px;
-  background:none;
-  color:var(--text-dark);
-  border:none;
-  cursor:pointer;
-}
-
-.navbar.active{
-  display:block;
-}
-
-/* =========================
-SCROLL ANIMATION
-========================= */
-
-.hidden{
-  opacity:0;
-  transform:translateY(40px);
-  transition:0.6s ease;
-}
-
-.show{
-  opacity:1;
-  transform:translateY(0);
 }
 
 /* =========================
@@ -502,22 +538,6 @@ RESPONSIVE
 ========================= */
 
 @media(max-width:768px){
-
-  .menu-btn{
-    display:block;
-  }
-
-  .navbar{
-    display:none;
-    width:100%;
-    text-align:center;
-    margin-top:10px;
-  }
-
-  .navbar ul{
-    flex-direction:column;
-    gap:15px;
-  }
 
   .hero h1{
     font-size:42px;
@@ -527,19 +547,17 @@ RESPONSIVE
     flex-direction:column;
   }
 
-  .mission-box{
-    text-align:center;
-  }
-
-  .mission-image img{
-    height:auto;
-  }
-
   .stats{
     flex-direction:column;
+    align-items:center;
   }
 
-}
+  .navbar ul{
+    flex-direction:column;
+    gap:15px;
+  }
+} 
+
 
 
 
