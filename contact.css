@@ -533,4 +533,14 @@ RESPONSIVE
     font-size:34px;
   }
 }
-```
+
+
+.copyright-right a{
+  color:#7b5c66 !important;
+  text-decoration:none;
+}
+
+.copyright-right a:hover{
+  color:#ff4f8b !important;
+}
+

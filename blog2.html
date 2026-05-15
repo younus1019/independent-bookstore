@@ -12,6 +12,25 @@
   <link rel="icon" type="image/png" href="images/logo for website.jpg">
 
   <script src="https://unpkg.com/lucide@latest"></script>
+  <script>
+
+function toggleRTL(){
+
+  if(document.body.style.direction === "rtl"){
+
+    document.body.style.direction = "ltr";
+
+  }
+
+  else{
+
+    document.body.style.direction = "rtl";
+
+  }
+
+}
+
+</script>
 </head>
 
 <body>
@@ -37,67 +56,340 @@
 
   <div class="header-buttons">
     <button class="theme-btn"><i data-lucide="moon"></i></button>
+    <button class="rtl-btn" onclick="toggleRTL()">
+  RTL
+</button>
     <button class="login-btn">Login</button>
   </div>
 </header>
 
-<!-- ================= HERO ================= -->
-<section class="hero blog-hero">
-  <div class="hero-text">
-    <h1>Blog <span>Page 2</span></h1>
-    <p>More insights, more books, more stories for you.</p>
+<!-- =========================
+BLOG DETAILS HERO
+========================= -->
+
+<section class="blog-details-hero">
+
+  <div class="blog-details-content">
+
+    <span>Book Review</span>
+
+    <h1>
+      Top 10 Must-Read Books Of 2026
+    </h1>
+
+    <p>
+      Discover the most impactful books released this year —
+      from self-development and business to fiction and creativity.
+    </p>
+
+    <div class="blog-meta">
+
+      <div>📅 Jan 12, 2026</div>
+
+      <div>✍ By Admin</div>
+
+      <div>📚 Reading Culture</div>
+
+    </div>
+
   </div>
+
 </section>
 
-<!-- ================= BLOG PAGE 2 CONTENT ================= -->
-<section class="blog2-section">
+<!-- =========================
+ARTICLE SECTION
+========================= -->
 
-  <h2 class="section-title">More Articles</h2>
-  <p class="section-text">Explore deeper stories, author insights, and reading guides.</p>
+<section class="article-layout">
 
-  <div class="blog2-grid">
+  <div class="article-wrapper">
 
-    <div class="blog2-card">
-      <img src="images/image-1.jpg" alt="">
-      <h3>How Books Change Your Thinking</h3>
-      <p>Reading shapes your mindset and decision-making ability.</p>
-      <a href="#">Read More</a>
-    </div>
+    <!-- ARTICLE -->
+    <article class="article-content">
 
-    <div class="blog2-card">
-      <img src="images/image-2.jpg" alt="">
-      <h3>Best Fiction Books of All Time</h3>
-      <p>A list of timeless stories every reader should explore.</p>
-      <a href="#">Read More</a>
-    </div>
+      <div class="article-image">
 
-    <div class="blog2-card">
-      <img src="images/image-3.jpg" alt="">
-      <h3>Morning Reading Routine Tips</h3>
-      <p>Start your day with powerful reading habits.</p>
-      <a href="#">Read More</a>
-    </div>
+        <img src="images/image-4.jpg" alt="Books">
 
-    <div class="blog2-card">
-      <img src="images/image-4.jpg" alt="">
-      <h3>Why Authors Write Books</h3>
-      <p>Understanding the journey behind storytelling.</p>
-      <a href="#">Read More</a>
-    </div>
+      </div>
 
-    <div class="blog2-card">
-      <img src="images/image-5.jpg" alt="">
-      <h3>Top Self-Help Books</h3>
-      <p>Books that improve discipline, focus and life skills.</p>
-      <a href="#">Read More</a>
-    </div>
+      <h2>
+        Why These Books Matter In 2026
+      </h2>
 
-    <div class="blog2-card">
+      <p>
+        Reading continues to shape creativity, discipline,
+        emotional intelligence, and professional growth.
+        The books released in 2026 focus on modern thinking,
+        meaningful storytelling, and practical life lessons.
+      </p>
+
+      <p>
+        Readers today want books that improve both personal
+        and professional life. From psychology and productivity
+        to inspiring fiction, these titles are changing how
+        people learn and grow.
+      </p>
+
+      <!-- QUOTE -->
+      <div class="article-quote">
+
+        “Books remain one of the most powerful tools for
+        improving focus, creativity, and understanding.”
+
+      </div>
+
+      <h3>
+        Books That Inspired Readers Worldwide
+      </h3>
+
+      <p>
+        Many bestselling books this year focused on building
+        better habits, deep work, emotional intelligence,
+        and intentional living. These themes strongly connect
+        with modern readers seeking balance in digital life.
+      </p>
+
+      <p>
+        Fiction titles also became more meaningful,
+        blending imagination with emotional storytelling.
+        Readers are now choosing books that create long-term impact.
+      </p>
+
+      <h3>
+        Building A Better Reading Habit
+      </h3>
+
+      <p>
+        Reading just twenty minutes daily can improve memory,
+        focus, and stress management. Creating a reading
+        environment and joining discussions can make
+        the experience more enjoyable.
+      </p>
+
+      <!-- TAGS -->
+      <div class="article-tags">
+
+        <span>Books</span>
+
+        <span>Reading</span>
+
+        <span>Self Development</span>
+
+        <span>Productivity</span>
+
+        <span>Book Reviews</span>
+
+      </div>
+
+    </article>
+
+    <!-- SIDEBAR -->
+    <aside class="blog-sidebar">
+
+      <!-- RECENT POSTS -->
+      <div class="sidebar-box">
+
+        <h3>Recent Posts</h3>
+
+        <div class="sidebar-post">
+
+          <img src="images/image-1.jpg" alt="">
+
+          <div>
+
+            <h4>
+              How To Build A Daily Reading Habit
+            </h4>
+
+            <span>Jan 08, 2026</span>
+
+          </div>
+
+        </div>
+
+        <div class="sidebar-post">
+
+          <img src="images/image-2.jpg" alt="">
+
+          <div>
+
+            <h4>
+              Interview With Paulo Coelho
+            </h4>
+
+            <span>Jan 03, 2026</span>
+
+          </div>
+
+        </div>
+
+        <div class="sidebar-post">
+
+          <img src="images/image-3.jpg" alt="">
+
+          <div>
+
+            <h4>
+              Why Fiction Improves Creativity
+            </h4>
+
+            <span>Dec 28, 2025</span>
+
+          </div>
+
+        </div>
+
+      </div>
+
+      <!-- CATEGORIES -->
+      <div class="sidebar-box">
+
+        <h3>Categories</h3>
+
+        <div class="category-list">
+
+          <a href="#">📚 Book Reviews</a>
+
+          <a href="#">✍ Author Interviews</a>
+
+          <a href="#">💡 Reading Tips</a>
+
+          <a href="#">🔥 Best Sellers</a>
+
+          <a href="#">📖 Reading Lifestyle</a>
+
+        </div>
+
+      </div>
+
+    </aside>
+
+  </div>
+
+</section>
+
+<!-- =========================
+RELATED POSTS
+========================= -->
+
+<section class="related-posts">
+
+  <div class="section-heading">
+
+    <span>More Articles</span>
+
+    <h2>
+      Related Blog Posts
+    </h2>
+
+    <p>
+      Continue exploring stories, interviews, and reading tips.
+    </p>
+
+  </div>
+
+  <div class="related-grid">
+
+    <!-- CARD 1 -->
+    <div class="related-card">
+
       <img src="images/image-6.jpg" alt="">
-      <h3>Reading vs Watching Videos</h3>
-      <p>Why reading still beats digital content.</p>
-      <a href="#">Read More</a>
+
+      <div class="related-content">
+
+        <h3>
+          How To Build A Reading Habit
+        </h3>
+
+        <p>
+          Simple techniques to make reading part of your daily routine.
+        </p>
+
+        <a href="#" class="primary-btn">
+          Read More
+        </a>
+
+      </div>
+
     </div>
+
+    <!-- CARD 2 -->
+    <div class="related-card">
+
+      <img src="images/image-2.jpg" alt="">
+
+      <div class="related-content">
+
+        <h3>
+          Interview With Paulo Coelho
+        </h3>
+
+        <p>
+          Insights on creativity, writing, and meaningful storytelling.
+        </p>
+
+        <a href="#" class="primary-btn">
+          Read More
+        </a>
+
+      </div>
+
+    </div>
+
+    <!-- CARD 3 -->
+    <div class="related-card">
+
+      <img src="images/image-3.jpg" alt="">
+
+      <div class="related-content">
+
+        <h3>
+          Why Deep Work Matters Today
+        </h3>
+
+        <p>
+          Learn how focused reading improves productivity and thinking.
+        </p>
+
+        <a href="#" class="primary-btn">
+          Read More
+        </a>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+<!-- =========================
+NEWSLETTER CTA
+========================= -->
+
+<section class="article-newsletter">
+
+  <div class="article-newsletter-content">
+
+    <h2>
+      Join Our Reading Community
+    </h2>
+
+    <p>
+      Get weekly book recommendations, reading tips,
+      and exclusive updates directly to your inbox.
+    </p>
+
+    <form class="newsletter-form">
+
+      <input type="email" placeholder="Enter your email">
+
+      <button class="primary-btn">
+        Subscribe
+      </button>
+
+    </form>
 
   </div>
 

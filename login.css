@@ -170,3 +170,119 @@ input:focus{
   object-fit:cover;
   border-radius:50%; /* optional circle look */
 }
+
+.remember-row{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:10px;
+  margin:10px 0 18px;
+}
+
+.remember-me{
+  display:flex;
+  align-items:center;
+  gap:8px;
+}
+
+.remember-me input{
+  width:16px;
+  height:16px;
+}
+
+.remember-me label{
+  margin:0;
+  font-size:14px;
+  color:var(--text-light);
+}
+
+.forgot-password{
+  font-size:14px;
+  color:var(--primary);
+  text-decoration:none;
+  font-weight:500;
+}
+
+.top-actions{
+  position:fixed;
+  top:18px;
+  right:22px;
+
+  display:flex;
+  align-items:center;
+  gap:10px;
+
+  z-index:1000;
+}
+
+.top-actions{
+  position:fixed;
+  top:18px;
+  right:22px;
+
+  display:flex;
+  align-items:center;
+  gap:10px;
+
+  z-index:1000;
+}
+
+/* RTL */
+
+.rtl-btn{
+  height:42px;
+  min-width:72px;
+
+  padding:0 18px;
+
+  border:none;
+
+  border-radius:30px;
+
+  background:#ff4f8b;
+
+  color:white;
+
+  font-size:14px;
+  font-weight:600;
+
+  cursor:pointer;
+
+  transition:0.3s ease;
+}
+
+.rtl-btn:hover{
+  background:#e63d77;
+}
+
+/* DARK MODE */
+
+.mode-btn{
+  width:42px;
+  height:42px;
+
+  border:none;
+
+  border-radius:50%;
+
+  background:#ff4f8b;
+
+  color:white;
+
+  display:flex;
+  align-items:center;
+  justify-content:center;
+
+  cursor:pointer;
+
+  transition:0.3s ease;
+}
+
+.mode-btn i{
+  width:18px;
+  height:18px;
+}
+
+.mode-btn:hover{
+  background:#e63d77;
+}

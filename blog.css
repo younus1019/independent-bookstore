@@ -799,6 +799,31 @@ COPYRIGHT
 }
 
 
+.rtl-btn{
+  height:40px;
+
+  padding:0 18px;
+
+  border:none;
+
+  border-radius:12px;
+
+  background:#ff4f8b;
+
+  color:white;
+
+  font-size:14px;
+  font-weight:600;
+
+  cursor:pointer;
+
+  transition:0.3s ease;
+}
+
+.rtl-btn:hover{
+  background:#e63d77;
+}
+
 
 
 

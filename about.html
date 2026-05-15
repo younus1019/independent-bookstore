@@ -8,6 +8,27 @@
   <link rel="stylesheet" href="about.css">
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
   <script src="https://unpkg.com/lucide@latest"></script>
+  <link rel="icon" type="image/png" href="images/logo for website.jpg">
+
+  <script>
+
+function toggleRTL(){
+
+  if(document.body.style.direction === "rtl"){
+
+    document.body.style.direction = "ltr";
+
+  }
+
+  else{
+
+    document.body.style.direction = "rtl";
+
+  }
+
+}
+
+</script>
 </head>
 
 <body>
@@ -81,12 +102,9 @@
 
 
     <!-- RTL BUTTON -->
-    <button class="rtl-btn">
-
-      RTL
-
-    </button>
-
+    <button class="rtl-btn" onclick="toggleRTL()">
+  RTL
+</button>
 
     <!-- LOGIN BUTTON -->
 
@@ -100,103 +118,98 @@
 
 </header>
 <!-- HERO -->
-<section class="hero">
-  <h1>Our Story</h1>
-  <p>Born from a love of books. Built for a community of readers.</p>
-</section>
-
-<!-- MISSION -->
-<section class="mission">
-  <div class="mission-container">
-
-    <div class="mission-box">
-      <h2>Our Mission</h2>
-      <h3>More than just a bookstore. We are a literary community.</h3>
-
-      <p>
-        The Pagely was born from a simple belief: independent bookstores are the heart of their neighbourhoods.
-      </p>
-
-      <p>
-        We’ve curated over 10,000 titles across genres, cultures, and eras.
-      </p>
-    </div>
-
-    <div class="mission-image">
-      <img src="images/image-4.jpg" alt="Bookstore Interior">
-    </div>
-
+<section class="about-hero">
+  <div class="about-hero-content">
+    <span>About Pagely</span>
+    <h1>More Than Books, We Build Reading Experiences</h1>
+    <p>
+      Pagely is a premium bookstore created for readers who love meaningful stories,
+      curated collections, peaceful spaces, and a strong reading community.
+    </p>
   </div>
 </section>
 
-<!-- OUR JOURNEY -->
-<section class="journey">
+<!-- MISSION SPLIT -->
+<section class="mission-premium">
+  <div class="mission-image">
+    <img src="images/image-4.jpg" alt="Bookstore Interior">
+  </div>
+
+  <div class="mission-content">
+    <span>Our Mission</span>
+    <h2>Creating a Beautiful Space for Every Reader</h2>
+    <p>
+      We believe bookstores should feel personal, inspiring, and welcoming.
+      Pagely brings together handpicked books, thoughtful recommendations,
+      and community experiences for modern readers.
+    </p>
+    <p>
+      From bestselling titles to hidden gems, every collection is designed
+      to help readers discover books that match their interests and goals.
+    </p>
+  </div>
+</section>
+
+<!-- JOURNEY TIMELINE -->
+<section class="journey-premium">
   <div class="section-heading">
     <span>Our Journey</span>
-    <h2>From a Small Shelf to a Reader’s Destination</h2>
-    <p>Pagely grew from a simple bookstore idea into a warm reading community.</p>
+    <h2>How Pagely Grew</h2>
+    <p>From a small reading idea to a premium bookstore experience.</p>
   </div>
 
-  <div class="journey-grid">
-    <div class="journey-card">
+  <div class="journey-line">
+    <div>
       <h3>2021</h3>
       <h4>Started Small</h4>
-      <p>We began with a carefully selected collection of meaningful books.</p>
+      <p>We began with curated books for passionate local readers.</p>
     </div>
 
-    <div class="journey-card">
+    <div>
       <h3>2023</h3>
       <h4>Built Community</h4>
-      <p>Book clubs, reader meetups, and author sessions became part of Pagely.</p>
+      <p>Book clubs, author sessions, and reading meetups became our identity.</p>
     </div>
 
-    <div class="journey-card">
+    <div>
       <h3>2026</h3>
-      <h4>Went Digital</h4>
-      <p>We expanded into a modern online bookstore for every type of reader.</p>
+      <h4>Premium Experience</h4>
+      <p>We expanded into a modern bookstore with digital and lounge experiences.</p>
     </div>
   </div>
 </section>
 
-<!-- WHY CHOOSE US -->
-<section class="why-us">
+<!-- WHY US SPLIT -->
+<section class="why-premium">
   <div class="why-content">
-    <span>Why Choose Us</span>
-    <h2>A Better Way to Discover Books</h2>
+    <span>Why Readers Choose Us</span>
+    <h2>A Better Way to Discover Your Next Book</h2>
     <p>
-      We help you find books that match your interest, mood, and personal growth journey.
+      We combine curated collections, reader-first service, community events,
+      and peaceful bookstore spaces to make reading more enjoyable.
     </p>
 
-    <div class="why-list">
-      <div>
-        <h4>📚 Curated Books</h4>
-        <p>Every book is selected with care and purpose.</p>
-      </div>
-
-      <div>
-        <h4>☕ Peaceful Reading Space</h4>
-        <p>A calm place made for book lovers.</p>
-      </div>
-
-      <div>
-        <h4>✨ Reader First Experience</h4>
-        <p>Recommendations, events, and community support.</p>
-      </div>
+    <div class="why-points">
+      <p>✓ Curated books selected with purpose</p>
+      <p>✓ Premium reading lounge experience</p>
+      <p>✓ Author events and reader meetups</p>
+      <p>✓ Personalized recommendations</p>
     </div>
   </div>
 
   <div class="why-image">
-    <img src="images/image-6.jpg" alt="Bookstore">
+    <img src="images/image-6.jpg" alt="Reading Space">
   </div>
 </section>
 
-<!-- READING EXPERIENCE -->
+<!-- EXPERIENCE BANNER -->
 <section class="reading-experience">
-  <div class="experience-box">
-    <h2>Designed for Every Reader</h2>
+  <div>
+    <span>Reader Experience</span>
+    <h2>Designed for Every Kind of Reader</h2>
     <p>
       Fiction, business, technology, self-development, novels, and timeless classics —
-      Pagely gives every reader a beautiful place to explore.
+      all arranged to make discovery simple and enjoyable.
     </p>
 
     <div class="tags">
@@ -209,105 +222,82 @@
   </div>
 </section>
 
-<!-- TESTIMONIALS -->
-<section class="testimonials">
+<!-- VALUES ONLY 2 CARDS -->
+<section class="values-premium">
   <div class="section-heading">
-    <span>Reader Love</span>
-    <h2>What Our Readers Say</h2>
-    <p>Real words from readers who found their next favourite book with us.</p>
+    <span>Our Values</span>
+    <h2>What We Believe In</h2>
   </div>
 
-  <div class="testimonial-grid">
-    <div class="testimonial-card">
-      <p>“Pagely feels warm, modern, and peaceful. I always find something meaningful here.”</p>
-      <h4>— Ananya Sharma</h4>
-    </div>
-
-    <div class="testimonial-card">
-      <p>“The collections are beautifully arranged and the recommendations are perfect.”</p>
-      <h4>— Rahul Verma</h4>
-    </div>
-
-    <div class="testimonial-card">
-      <p>“Best place for readers, book clubs, and discovering new authors.”</p>
-      <h4>— Sneha Reddy</h4>
-    </div>
-  </div>
-</section>
-
-<!-- VALUES -->
-<section class="values">
-  <h2>Our Core Values</h2>
-
-  <div class="grid">
-    <div class="card">
+  <div class="values-grid">
+    <div class="value-card">
       <h3>Community First</h3>
-      <p>Books bring people together.</p>
+      <p>
+        We create spaces where readers can connect, discuss, learn, and grow together.
+      </p>
     </div>
 
-    <div class="card">
+    <div class="value-card">
       <h3>Curation Over Quantity</h3>
-      <p>Every book is hand-selected.</p>
-    </div>
-
-    <div class="card">
-      <h3>Inclusive & Welcoming</h3>
-      <p>We celebrate diverse voices.</p>
+      <p>
+        Every book is selected thoughtfully to give readers quality choices.
+      </p>
     </div>
   </div>
 </section>
 
-<!-- STATS -->
-<section class="stats">
-  <div class="stat-box">
+<!-- DARK STATS -->
+<section class="stats-premium">
+  <div>
     <h2>10K+</h2>
-    <p>Books in Stock</p>
+    <p>Curated Books</p>
   </div>
 
-  <div class="stat-box">
+  <div>
     <h2>500+</h2>
     <p>Book Club Members</p>
   </div>
 
-  <div class="stat-box">
+  <div>
     <h2>200+</h2>
-    <p>Author Events Hosted</p>
+    <p>Author Events</p>
   </div>
 </section>
 
-<!-- TEAM -->
-<section class="team">
-  <h2>Meet Our Booksellers</h2>
+<!-- TEAM STRIP -->
+<section class="team-premium">
+  <div class="section-heading">
+    <span>Our Team</span>
+    <h2>Meet Our Booksellers</h2>
+    <p>Friendly experts who help readers find the right book.</p>
+  </div>
 
-  <div class="team-grid">
-    <div class="team-card">
+  <div class="team-strip">
+    <div class="team-pill">
       <h3>Priya Nair</h3>
       <p>Head Curator</p>
-      <span>South Asian literature expert.</span>
     </div>
 
-    <div class="team-card">
+    <div class="team-pill">
       <h3>Arjun Menon</h3>
       <p>Reading Advisor</p>
-      <span>Fantasy & Sci-Fi specialist.</span>
     </div>
 
-    <div class="team-card">
+    <div class="team-pill">
       <h3>Sneha Kulkarni</h3>
       <p>Events Coordinator</p>
-      <span>Hosted 150+ literary events.</span>
     </div>
   </div>
 </section>
 
 <!-- CTA -->
-<section class="cta">
-  <h2>Ready to find your next favourite book?</h2>
-  <p>Visit us or explore our catalogue online.</p>
+<section class="about-cta">
+  <h2>Ready to Find Your Next Favourite Book?</h2>
+  <p>Visit Pagely or explore our curated catalogue online.</p>
 
   <div class="btns">
-    <button>Become a Member</button>
-    <button>Shop Online</button>
+    <button class="primary-btn">Become a Member</button>
+    <button class="secondary-btn">Shop Online</button>
   </div>
 </section>
 

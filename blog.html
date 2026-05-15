@@ -11,6 +11,26 @@
   <link rel="stylesheet" href="./blog.css">
   <script src="https://unpkg.com/lucide@latest"></script>
   <link rel="icon" type="image/png" href="images/logo for website.jpg">
+
+  <script>
+
+function toggleRTL(){
+
+  if(document.body.style.direction === "rtl"){
+
+    document.body.style.direction = "ltr";
+
+  }
+
+  else{
+
+    document.body.style.direction = "rtl";
+
+  }
+
+}
+
+</script>
 </head>
 
 <body>
@@ -34,6 +54,9 @@
     </nav>
     <div class="header-buttons">
       <button class="theme-btn" id="theme-toggle"><i data-lucide="moon"></i></button>
+      <button class="rtl-btn" onclick="toggleRTL()">
+  RTL
+</button>
       <button class="login-btn">Login</button>
     </div>
   </header>
@@ -58,7 +81,7 @@
         <div class="blog-content">
           <h3>Top 10 Must-Read Books of 2026</h3>
           <p>Discover the most impactful books released this year.</p>
-          <a href="post1.html" class="primary-btn">Read More</a>
+          <a href="./blog2.html" class="primary-btn">Read More</a>
         </div>
       </div>
 
@@ -67,7 +90,7 @@
         <div class="blog-content">
           <h3>Interview with Paulo Coelho</h3>
           <p>The Alchemist author shares his thoughts on creativity.</p>
-          <a href="post2.html" class="primary-btn">Read More</a>
+          <a href="blog2.html" class="primary-btn">Read More</a>
         </div>
       </div>
 
@@ -76,7 +99,7 @@
         <div class="blog-content">
           <h3>How to Build a Reading Habit</h3>
           <p>Tips and tricks to make reading a daily joy.</p>
-          <a href="post3.html" class="primary-btn">Read More</a>
+          <a href="blog2.html" class="primary-btn">Read More</a>
         </div>
       </div>
     </div>

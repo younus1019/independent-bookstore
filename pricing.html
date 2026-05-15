@@ -11,6 +11,29 @@
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
   <script src="https://unpkg.com/lucide@latest"></script>
+  <link rel="icon" type="image/png" href="images/logo for website.jpg">
+
+  <script>
+
+function toggleRTL(){
+
+  if(document.body.style.direction === "rtl"){
+
+    document.body.style.direction = "ltr";
+
+  }
+
+  else{
+
+    document.body.style.direction = "rtl";
+
+  }
+
+}
+
+</script>
+
+
 </head>
 
 <body>
@@ -73,9 +96,9 @@ HEADER
       <i data-lucide="moon"></i>
     </button>
 
-    <button class="rtl-btn">
-      RTL
-    </button>
+    <button class="rtl-btn" onclick="toggleRTL()">
+  RTL
+</button>
 
     <a href="./login.html" class="login-btn">
       Login

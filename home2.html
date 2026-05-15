@@ -5,6 +5,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="home2.css">
+    <link rel="icon" type="image/png" href="images/logo for website.jpg">
+
+    <script>
+
+function toggleRTL(){
+
+  if(document.body.style.direction === "rtl"){
+
+    document.body.style.direction = "ltr";
+
+  }
+
+  else{
+
+    document.body.style.direction = "rtl";
+
+  }
+
+}
+
+</script>
 </head>
 <body>
   
@@ -77,11 +98,9 @@
 
 
     <!-- RTL BUTTON -->
-    <button class="rtl-btn">
-
-      RTL
-
-    </button>
+    <button class="rtl-btn" onclick="toggleRTL()">
+  RTL
+</button>
 
 
     <!-- LOGIN BUTTON -->
@@ -95,249 +114,182 @@
   </div>
 
 </header>
-    <!-- ========================================
-HOME PAGE 2 - PREMIUM VERSION
-NAVBAR + FOOTER SAME
-======================================== -->
-
-<!-- HERO SECTION 2 -->
+<!-- HERO OVERLAY -->
 <section class="hero-two">
 
-  <div class="hero-overlay"></div>
-
   <div class="hero-two-content">
+    <p class="hero-tag">Premium Reading Experience</p>
 
-    <p class="hero-tag">
-      Premium Reading Experience
-    </p>
-
-    <h1>
-      Discover Stories <br>
-      That Stay With You Forever
-    </h1>
+    <h1>Discover Stories That Stay With You Forever</h1>
 
     <p class="hero-description">
-      Explore bestselling books, timeless classics, and inspiring reads
-      curated for passionate readers around the world.
+      Explore curated books, inspiring authors, reading lounges, and premium membership benefits made for modern readers.
     </p>
 
     <div class="hero-buttons">
-
-      <button class="primary-btn">
-        Explore Collection
-      </button>
-
-      <button class="secondary-btn">
-        Join Membership
-      </button>
-
+      <button class="primary-btn">Explore Collection</button>
+      <button class="secondary-btn">Join Membership</button>
     </div>
 
+    <div class="hero-mini-stats">
+      <span>50K+ Readers</span>
+      <span>10K+ Books</span>
+      <span>120+ Authors</span>
+    </div>
   </div>
 
 </section>
 
-
-<!-- PREMIUM FEATURES -->
+<!-- 2 PREMIUM FEATURE BLOCKS -->
 <section class="premium-features">
 
   <h2 class="section-title">Premium Experience</h2>
-
-  <p class="section-text">
-    Everything designed perfectly for modern readers.
-  </p>
+  <p class="section-text">Designed for readers who want more than just books.</p>
 
   <div class="premium-grid">
 
     <div class="premium-card">
-
       <i data-lucide="sparkles"></i>
-
       <h3>Curated Collections</h3>
-
-      <p>
-        Handpicked books selected by expert editors and readers.
-      </p>
-
+      <p>Handpicked books selected across fiction, business, self-growth, classics, and technology.</p>
     </div>
 
     <div class="premium-card">
-
-      <i data-lucide="shield-check"></i>
-
-      <h3>Trusted Quality</h3>
-
-      <p>
-        Original books with premium quality and fast delivery.
-      </p>
-
-    </div>
-
-    <div class="premium-card">
-
-      <i data-lucide="badge-percent"></i>
-
-      <h3>Exclusive Offers</h3>
-
-      <p>
-        Get member-only discounts and early access to new arrivals.
-      </p>
-
+      <i data-lucide="users"></i>
+      <h3>Reader Community</h3>
+      <p>Join book clubs, author sessions, discussions, and premium reader-only events.</p>
     </div>
 
   </div>
 
-  <!-- FEATURED AUTHORS -->
+</section>
+
+<!-- AUTHORS STRIP -->
 <section class="featured-authors">
 
-  <h2 class="section-title">
-    Meet Our Top Authors
-  </h2>
+  <h2 class="section-title">Meet Our Top Authors</h2>
+  <p class="section-text">Explore books from world-renowned writers and storytellers.</p>
 
-  <p class="section-text">
-    Explore books from world-renowned writers and storytellers.
-  </p>
+  <div class="authors-strip">
 
-  <div class="authors-grid">
-
-    <div class="author-box">
-
+    <div class="author-pill">
       <img src="images/image-1.jpg" alt="Author">
-
-      <h3>James Clear</h3>
-
-      <p>
-        Author of Atomic Habits
-      </p>
-
+      <div>
+        <h3>James Clear</h3>
+        <p>Atomic Habits</p>
+      </div>
     </div>
 
-    <div class="author-box">
-
+    <div class="author-pill">
       <img src="images/image-2.jpg" alt="Author">
-
-      <h3>Robert Kiyosaki</h3>
-
-      <p>
-        Rich Dad Poor Dad
-      </p>
-
+      <div>
+        <h3>Robert Kiyosaki</h3>
+        <p>Rich Dad Poor Dad</p>
+      </div>
     </div>
 
-    <div class="author-box">
-
+    <div class="author-pill">
       <img src="images/image-3.jpg" alt="Author">
-
-      <h3>Morgan Housel</h3>
-
-      <p>
-        Psychology Of Money
-      </p>
-
+      <div>
+        <h3>Morgan Housel</h3>
+        <p>Psychology of Money</p>
+      </div>
     </div>
 
   </div>
 
 </section>
 
-</section>
-
-
-<!-- TRENDING BOOKS -->
+<!-- TRENDING BOOK SPLIT LAYOUT -->
 <section class="trending-books">
 
   <div class="trending-content">
 
     <div class="trending-left">
-
       <img src="images/image-3.jpg" alt="Book">
-
     </div>
 
     <div class="trending-right">
+      <p class="small-title">Trending This Month</p>
 
-      <p class="small-title">
-        Trending This Month
-      </p>
-
-      <h2>
-        Discover Bestselling <br>
-        Books Of 2026
-      </h2>
+      <h2>Discover Bestselling Books Of 2026</h2>
 
       <p>
-        Explore inspiring books from successful authors and discover
-        stories loved by millions of readers worldwide.
+        Explore inspiring books from successful authors and discover stories loved by millions of readers worldwide.
       </p>
 
-      <button class="primary-btn">
-        View Best Sellers
-      </button>
-
+      <button class="primary-btn">View Best Sellers</button>
     </div>
 
   </div>
 
-  <!-- TESTIMONIALS -->
+</section>
+
+<!-- READING LOUNGE SECTION -->
+<section class="reading-space">
+
+  <div class="reading-left">
+    <img src="images/image-2.jpg" alt="Reading Lounge">
+  </div>
+
+  <div class="reading-right">
+    <p class="small-title">Designed For Readers</p>
+
+    <h2>A Calm Space Built For Deep Reading & Discovery</h2>
+
+    <p>
+      Experience thoughtfully designed reading spaces, premium collections,
+      peaceful ambience, and a welcoming literary community.
+    </p>
+
+    <button class="primary-btn">Explore Experience</button>
+  </div>
+
+</section>
+
+<!-- 2 PREMIUM REVIEWS -->
 <section class="testimonials">
 
-  <h2 class="section-title">
-    What Readers Say
-  </h2>
+  <h2 class="section-title">What Readers Say</h2>
+  <p class="section-text">Real experiences from readers who love Pagely.</p>
 
-  <p class="section-text">
-    Thousands of readers trust our bookstore every day.
-  </p>
+  <div class="review-wrapper">
 
-  <div class="testimonial-grid">
+    <div class="review-box">
+      <div class="review-image">
+        <img src="images/author-image-1.jpg" alt="Reader">
+      </div>
 
-    <div class="testimonial-card">
-
-      <p>
-        “Amazing collection and beautiful user experience.
-        I found my favorite books easily.”
-      </p>
-
-      <h4>
-        — Rahul Sharma
-      </h4>
-
+      <div class="review-content">
+        <div class="stars">★★★★★</div>
+        <p>
+          “Pagely feels premium, peaceful, and personal. I always find books that match my mood perfectly.”
+        </p>
+        <h3>Rahul Sharma</h3>
+        <span>Book Club Member</span>
+      </div>
     </div>
 
-    <div class="testimonial-card">
+    <div class="review-box reverse">
+      <div class="review-image">
+        <img src="images/author-image-2.jpg" alt="Reader">
+      </div>
 
-      <p>
-        “Fast delivery and premium quality books.
-        Highly recommended for readers.”
-      </p>
-
-      <h4>
-        — Ayesha Khan
-      </h4>
-
-    </div>
-
-    <div class="testimonial-card">
-
-      <p>
-        “One of the best bookstore websites I’ve used.
-        Very modern and clean.”
-      </p>
-
-      <h4>
-        — Kiran Patel
-      </h4>
-
+      <div class="review-content">
+        <div class="stars">★★★★★</div>
+        <p>
+          “The reading lounge, curated books, and fast delivery make Pagely my favourite bookstore experience.”
+        </p>
+        <h3>Ayesha Khan</h3>
+        <span>Premium Member</span>
+      </div>
     </div>
 
   </div>
 
 </section>
 
-</section>
-
-
-<!-- STATS SECTION -->
+<!-- DARK STATS BANNER -->
 <section class="stats-section">
 
   <div class="stats-grid">
@@ -366,28 +318,18 @@ NAVBAR + FOOTER SAME
 
 </section>
 
-
-<!-- CTA SECTION -->
+<!-- PREMIUM CTA -->
 <section class="premium-cta">
 
-  <h2>
-    Start Your Reading Journey Today
-  </h2>
+  <h2>Build Your Personal Reading Universe</h2>
 
   <p>
-    Join thousands of readers discovering inspiring books daily.
+    Join thousands of readers discovering curated books, premium lounge access, and author-led experiences.
   </p>
 
   <div class="hero-buttons">
-
-    <button class="primary-btn">
-      Browse Books
-    </button>
-
-    <button class="secondary-btn">
-      Become Member
-    </button>
-
+    <button class="primary-btn">Browse Books</button>
+    <button class="secondary-btn">Become Member</button>
   </div>
 
 </section>

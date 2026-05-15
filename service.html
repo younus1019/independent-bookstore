@@ -8,6 +8,27 @@
   <link rel="stylesheet" href="service.css">
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
   <script src="https://unpkg.com/lucide@latest"></script>
+  <link rel="icon" type="image/png" href="images/logo for website.jpg">
+
+  <script>
+
+function toggleRTL(){
+
+  if(document.body.style.direction === "rtl"){
+
+    document.body.style.direction = "ltr";
+
+  }
+
+  else{
+
+    document.body.style.direction = "rtl";
+
+  }
+
+}
+
+</script>
 </head>
 
 <body>
@@ -82,11 +103,9 @@
 
 
     <!-- RTL BUTTON -->
-    <button class="rtl-btn">
-
-      RTL
-
-    </button>
+    <button class="rtl-btn" onclick="toggleRTL()">
+  RTL
+</button>
 
 
     <!-- LOGIN BUTTON -->
@@ -100,326 +119,171 @@
   </div>
 
 </header>
-
 <!-- HERO -->
-<section class="hero">
-
-  <h1>What We Offer</h1>
-  <p>Six ways to deepen your relationship with reading.</p>
-
+<section class="service-hero">
+  <div>
+    <span>Premium Services</span>
+    <h1>Services Built for Modern Readers</h1>
+    <p>Discover curated books, peaceful reading spaces, fast delivery, member benefits, and community events in one premium bookstore experience.</p>
+  </div>
 </section>
 
-<!-- SERVICES SECTION -->
-<section class="services">
-
-  <div class="service-layout">
-
-    <!-- SERVICE 1 -->
-    <div class="service-row">
-
-      <div class="service-image">
-        <img src="https://images.unsplash.com/photo-1521587760476-6c12a4b040da?q=80&w=1200" alt="">
-      </div>
-
-      <div class="service-content">
-
-        <span>BOOK COLLECTION</span>
-
-        <h2>Explore Thousands Of Books</h2>
-
-        <p>
-          Discover fiction, business, technology, romance, self-development,
-          biographies, and many more categories carefully curated for readers.
-        </p>
-
-        <a href="#" class="service-btn">
-          Explore Books
-        </a>
-
-      </div>
-
+<!-- SERVICES SPLIT -->
+<section class="services-premium">
+  <div class="service-row">
+    <img src="https://images.unsplash.com/photo-1521587760476-6c12a4b040da?q=80&w=1200" alt="Books">
+    <div>
+      <span>BOOK COLLECTION</span>
+      <h2>Explore Curated Books</h2>
+      <p>Discover fiction, business, technology, romance, biographies, and self-development books selected for quality readers.</p>
+      <a href="./service details.html" class="primary-btn">Explore Books</a>
     </div>
-
-    <!-- SERVICE 2 -->
-    <div class="service-row reverse">
-
-      <div class="service-image">
-        <img src="https://images.unsplash.com/photo-1507842217343-583bb7270b66?q=80&w=1200" alt="">
-      </div>
-
-      <div class="service-content">
-
-        <span>READING LOUNGE</span>
-
-        <h2>Peaceful Café & Reading Space</h2>
-
-        <p>
-          Enjoy your favorite books with coffee and snacks in a calm
-          environment designed for book lovers and students.
-        </p>
-
-        <a href="#" class="service-btn">
-          Visit Lounge
-        </a>
-
-      </div>
-
-    </div>
-
-    <!-- SERVICE 3 -->
-    <div class="service-row">
-
-      <div class="service-image">
-        <img src="https://images.unsplash.com/photo-1512820790803-83ca734da794?q=80&w=1200" alt="">
-      </div>
-
-      <div class="service-content">
-
-        <span>ONLINE DELIVERY</span>
-
-        <h2>Fast & Secure Book Delivery</h2>
-
-        <p>
-          Order books online and get quick doorstep delivery with safe packaging
-          and real-time order tracking support.
-        </p>
-
-        <a href="#" class="service-btn">
-          Order Now
-        </a>
-
-      </div>
-
-    </div>
-
   </div>
 
+  <div class="service-row reverse">
+    <img src="https://images.unsplash.com/photo-1507842217343-583bb7270b66?q=80&w=1200" alt="Reading Lounge">
+    <div>
+      <span>READING LOUNGE</span>
+      <h2>Peaceful Café & Reading Space</h2>
+      <p>Relax with books, coffee, and a calm atmosphere designed for students, readers, and working professionals.</p>
+      <a href="./service details.html" class="primary-btn">Visit Lounge</a>
+    </div>
+  </div>
+
+  <div class="service-row">
+    <img src="https://images.unsplash.com/photo-1512820790803-83ca734da794?q=80&w=1200" alt="Delivery">
+    <div>
+      <span>ONLINE DELIVERY</span>
+      <h2>Fast & Secure Delivery</h2>
+      <p>Order books online and receive safe packaging, quick doorstep delivery, and simple order tracking.</p>
+      <a href="./service details.html" class="primary-btn">Order Now</a>
+    </div>
+  </div>
 </section>
 
-
-<!-- PREMIUM HIGHLIGHTS -->
-<section class="premium-highlights">
-
+<!-- 2 PREMIUM HIGHLIGHTS -->
+<section class="service-highlights">
   <div class="section-heading">
-    <span>Premium Services</span>
-    <h2>Everything a Reader Needs in One Place</h2>
-    <p>Enjoy books, comfort, delivery, events, and personal recommendations.</p>
+    <span>Premium Value</span>
+    <h2>Everything a Reader Needs</h2>
+    <p>We combine books, comfort, guidance, and community for a better reading lifestyle.</p>
   </div>
 
   <div class="highlight-grid">
-
     <div class="highlight-card">
-      <div class="highlight-icon">📖</div>
       <h3>Personal Book Picks</h3>
-      <p>Get book suggestions based on your taste, mood, and reading goals.</p>
+      <p>Get recommendations based on your taste, mood, reading goals, and favourite genres.</p>
     </div>
 
     <div class="highlight-card">
-      <div class="highlight-icon">🎁</div>
-      <h3>Book Gifting</h3>
-      <p>Premium gift wrapping and curated book bundles for special occasions.</p>
+      <h3>Author Events & Clubs</h3>
+      <p>Attend book launches, author meetups, reading clubs, and meaningful literary sessions.</p>
     </div>
-
-    <div class="highlight-card">
-      <div class="highlight-icon">🎤</div>
-      <h3>Author Events</h3>
-      <p>Meet authors, attend readings, and join exclusive literary sessions.</p>
-    </div>
-
   </div>
-
 </section>
 
 <!-- HOW IT WORKS -->
-<section class="steps">
-
-  <h2>How It Works</h2>
-
-  <div class="step-grid">
-
-    <div class="step">
-      <h3>1. Browse or Ask</h3>
-      <p>Explore shelves or get personalized recommendations.</p>
-    </div>
-
-    <div class="step">
-      <h3>2. Read & Relax</h3>
-      <p>Enjoy books in our reading lounge with café service.</p>
-    </div>
-
-    <div class="step">
-      <h3>3. Join Community</h3>
-      <p>Attend events and become part of our reading family.</p>
-    </div>
-
+<section class="steps-premium">
+  <div class="section-heading">
+    <span>How It Works</span>
+    <h2>Simple Reading Experience</h2>
   </div>
 
+  <div class="steps-line">
+    <div>
+      <h3>01</h3>
+      <h4>Browse or Ask</h4>
+      <p>Explore books or ask us for personal recommendations.</p>
+    </div>
+
+    <div>
+      <h3>02</h3>
+      <h4>Read & Relax</h4>
+      <p>Enjoy our lounge, café, book clubs, and calm reading environment.</p>
+    </div>
+
+    <div>
+      <h3>03</h3>
+      <h4>Join Community</h4>
+      <p>Become part of events, memberships, and reader discussions.</p>
+    </div>
+  </div>
 </section>
 
-<!-- MEMBERSHIP BENEFITS -->
-<section class="membership-benefits">
-
-  <div class="benefit-content">
+<!-- MEMBERSHIP SPLIT -->
+<section class="membership-premium">
+  <div>
     <span>Membership Benefits</span>
     <h2>Join Our Reading Family</h2>
-    <p>
-      Become a member and enjoy lending access, event discounts,
-      early book launches, and exclusive reader rewards.
-    </p>
+    <p>Unlock lending access, event discounts, premium lounge benefits, early releases, and reader rewards.</p>
 
     <div class="benefit-list">
-      <p>✔ Borrow books every month</p>
-      <p>✔ Priority seating for events</p>
-      <p>✔ Special discounts on purchases</p>
-      <p>✔ Early access to new arrivals</p>
+      <p>✓ Borrow books every month</p>
+      <p>✓ Priority seating for events</p>
+      <p>✓ Special discounts on purchases</p>
+      <p>✓ Early access to new arrivals</p>
     </div>
 
-    <a href="#" class="benefit-btn">Become a Member</a>
+    <a href="#" class="primary-btn">Become a Member</a>
   </div>
 
-  <div class="benefit-image">
-    <img src="https://images.unsplash.com/photo-1524995997946-a1c2e315a42f?q=80&w=1200" alt="Membership">
-  </div>
-
+  <img src="https://images.unsplash.com/photo-1524995997946-a1c2e315a42f?q=80&w=1200" alt="Membership">
 </section>
 
 <!-- REVIEWS -->
-<section class="reviews">
-
-  <h2>What Readers Say</h2>
-
-  <div class="review-grid">
-
-    <div class="review">
-      <p>★★★★★</p>
-      <p>"Best bookstore experience in Bengaluru. Amazing recommendations."</p>
-      <span>Kavya R.</span>
-    </div>
-
-    <div class="review">
-      <p>★★★★★</p>
-      <p>"Corporate gifting experience was excellent and meaningful."</p>
-      <span>Rohan S.</span>
-    </div>
-
-    <div class="review">
-      <p>★★★★★</p>
-      <p>"Book club changed my social life completely."</p>
-      <span>Divya Menon</span>
-    </div>
-
+<section class="service-reviews">
+  <div class="section-heading">
+    <span>Reader Love</span>
+    <h2>What Readers Say</h2>
   </div>
 
+  <div class="review-wrapper">
+    <div class="review-box">
+      <img src="images/reviers-image.webp" alt="Reader">
+      <div>
+        <p class="stars">★★★★★</p>
+        <p>“The reading lounge and personal recommendations made Pagely feel premium and personal.”</p>
+        <h3>Kavya R.</h3>
+        <span>Premium Member</span>
+      </div>
+    </div>
+
+    <div class="review-box reverse">
+      <img src="images/reviewers-image2.avif" alt="Reader">
+      <div>
+        <p class="stars">★★★★★</p>
+        <p>“Fast delivery, beautiful packaging, and meaningful book suggestions. Very professional experience.”</p>
+        <h3>Rohan S.</h3>
+        <span>Book Club Member</span>
+      </div>
+    </div>
+  </div>
 </section>
 
 <!-- FAQ -->
-<!-- FAQ SECTION -->
 <section class="faq">
-
-  <h2 class="section-title">
-    Frequently Asked Questions
-  </h2>
+  <h2 class="section-title">Frequently Asked Questions</h2>
 
   <div class="faq-container">
-
-    <!-- FAQ 1 -->
     <div class="faq-item">
-
-      <button class="faq-question">
-        Can I sit and read without purchasing?
-        <span>+</span>
-      </button>
-
-      <div class="faq-answer">
-        <p>
-          Yes, readers are welcome to sit and explore books in our reading
-          lounge without purchasing. We provide a peaceful environment for
-          book lovers.
-        </p>
-      </div>
-
+      <button class="faq-question">Can I sit and read without purchasing?<span>+</span></button>
+      <div class="faq-answer"><p>Yes, readers are welcome to sit and explore books in our reading lounge.</p></div>
     </div>
 
-    <!-- FAQ 2 -->
     <div class="faq-item">
-
-      <button class="faq-question">
-        How does book lending work?
-        <span>+</span>
-      </button>
-
-      <div class="faq-answer">
-        <p>
-          Members can borrow books using their membership account. Simply
-          choose a book, scan it at the counter, and return it within the
-          lending period.
-        </p>
-      </div>
-
+      <button class="faq-question">How does book lending work?<span>+</span></button>
+      <div class="faq-answer"><p>Members can borrow books using their membership account and return them within the lending period.</p></div>
     </div>
 
-    <!-- FAQ 3 -->
     <div class="faq-item">
-
-      <button class="faq-question">
-        How do I place a pre-order?
-        <span>+</span>
-      </button>
-
-      <div class="faq-answer">
-        <p>
-          You can pre-order upcoming books directly through our website or
-          by visiting the bookstore. Pre-order customers receive early
-          notifications and exclusive offers.
-        </p>
-      </div>
-
+      <button class="faq-question">Do you offer same-day delivery?<span>+</span></button>
+      <div class="faq-answer"><p>Same-day delivery is available in selected locations for orders placed before 2 PM.</p></div>
     </div>
-
-    <!-- FAQ 4 -->
-    <div class="faq-item">
-
-      <button class="faq-question">
-        Do you offer same-day delivery?
-        <span>+</span>
-      </button>
-
-      <div class="faq-answer">
-        <p>
-          Same-day delivery is available in selected locations for orders
-          placed before 2 PM. Delivery availability depends on your area.
-        </p>
-      </div>
-
-    </div>
-
-    <!-- FAQ 5 -->
-    <div class="faq-item">
-
-      <button class="faq-question">
-        Can I attend events without membership?
-        <span>+</span>
-      </button>
-
-      <div class="faq-answer">
-        <p>
-          Yes, many events are open to everyone. However, members receive
-          priority seating, discounts, and access to exclusive book club
-          sessions.
-        </p>
-      </div>
-
-    </div>
-
   </div>
-
 </section>
 
-
-
-<!-- FINAL CTA -->
+<!-- CTA -->
 <section class="service-cta">
-
   <h2>Ready to Experience Pagely Services?</h2>
   <p>Explore books, visit our lounge, or join our reader community today.</p>
 
@@ -427,7 +291,6 @@
     <a href="#" class="cta-primary">Explore Books</a>
     <a href="#" class="cta-secondary">Contact Us</a>
   </div>
-
 </section>
 
 <!-- FOOTER -->

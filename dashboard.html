@@ -2,159 +2,236 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Bookstore Dashboard</title>
+  <title>Pagely Dashboard</title>
+
   <link rel="stylesheet" href="dashboard.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <link rel="icon" type="image/png" href="images/logo for website.jpg">
+  <script>
+
+function toggleRTL(){
+
+  if(document.body.style.direction === "rtl"){
+
+    document.body.style.direction = "ltr";
+
+  }
+
+  else{
+
+    document.body.style.direction = "rtl";
+
+  }
+
+}
+
+</script>
 </head>
 
 <body>
 
-<!-- SIDEBAR -->
-<div class="sidebar">
-  <h2>📚 Pagely</h2>
-  <ul>
-    <li>Dashboard</li>
-    <li>Books</li>
-    <li>Categories</li>
-    <li>Authors</li>
-    <li>Orders</li>
-    <li>Wishlist</li>
-    <li>Settings</li>
+<div class="dashboard">
 
-    <li>Settings</li>
+  <!-- SIDEBAR -->
+  <aside class="sidebar">
 
-<li>Settings</li>
+    <div class="brand">
+      <img src="images/logo for website.jpg" alt="Pagely Logo">
+      <span>Pagely</span>
+    </div>
 
-<li class="logout-item">
-  <a href="login.html" class="logout-btn-sidebar">
-    Logout
-  </a>
-</li>
+    <ul>
+      <li class="active"><i data-lucide="layout-dashboard"></i>Dashboard</li>
+      <li><i data-lucide="book-open"></i>Books</li>
+      <li><i data-lucide="grid-2x2"></i>Categories</li>
+      <li><i data-lucide="pen-tool"></i>Authors</li>
+      <li><i data-lucide="shopping-bag"></i>Orders</li>
+      <li><i data-lucide="heart"></i>Wishlist</li>
+      <li><i data-lucide="bell"></i>Notifications</li>
+      <li><i data-lucide="settings"></i>Settings</li>
+    </ul>
 
-  
+    <a href="login.html" class="logout-btn">
+      <i data-lucide="log-out"></i>
+      Logout
+    </a>
 
-  </ul>
-</div>
+  </aside>
 
+  <!-- MAIN -->
+  <main class="main">
 
+    <!-- TOPBAR -->
+    <div class="topbar">
 
-<!-- MAIN -->
-<div class="main">
-
-  <!-- TOP BAR -->
-  <div class="topbar">
-    <h3>Dashboard</h3>
-    <div class="profile">👤 User</div>
-  </div>
-
-  <!-- STATS -->
-  <div class="stats">
-    <div class="card">📚 <h3>1200+</h3><p>Books</p></div>
-    <div class="card">👨‍💻 <h3>300+</h3><p>Authors</p></div>
-    <div class="card">🛒 <h3>850+</h3><p>Orders</p></div>
-    <div class="card">⭐ <h3>4.8</h3><p>Rating</p></div>
-  </div>
-
-  <!-- READING PROGRESS -->
-<section class="reading-progress">
-  <div class="progress-card">
-    <div>
-      <span>Reading Progress</span>
-      <h2>Keep Your Goals On Track</h2>
-      <p>Track books read, wishlist items, and your monthly reading target.</p>
-
-      <div class="progress-stats">
-        <div><h3>48</h3><p>Books Read</p></div>
-        <div><h3>12</h3><p>Wishlist</p></div>
-        <div><h3>89%</h3><p>Goal</p></div>
+      <div>
+        <h2>User Dashboard</h2>
+        <p>Welcome back, Younus</p>
       </div>
+
+      <div class="top-actions">
+        <div class="search">Search books...</div>
+
+        <div class="notify">
+          <i data-lucide="bell"></i>
+        </div>
+        <button class="rtl-btn" onclick="toggleRTL()">
+  RTL
+</button>
+
+        <div class="profile">
+          <i data-lucide="user"></i>
+          User
+        </div>
+      </div>
+
     </div>
 
-    <div class="circle">
-      <h2>89%</h2>
-      <p>Completed</p>
-    </div>
-  </div>
-</section>
+    <!-- WELCOME -->
+    <section class="welcome">
 
-  <!-- FEATURED BOOKS -->
-  <h2 class="section-title">Featured Books</h2>
-  <div class="grid">
-    <div class="book-card">Book 1</div>
-    <div class="book-card">Book 2</div>
-    <div class="book-card">Book 3</div>
-    <div class="book-card">Book 4</div>
-  </div>
+      <div>
+        <span>Premium Member</span>
+        <h1>Manage your reading journey beautifully</h1>
+        <p>
+          Track books, orders, authors, wishlist, and reading progress in one premium dashboard.
+        </p>
+      </div>
 
-  <!-- CATEGORIES -->
-  <h2 class="section-title">Categories</h2>
-  <div class="categories">
-    <div>Fiction</div>
-    <div>Romance</div>
-    <div>Science</div>
-    <div>Biography</div>
-    <div>History</div>
-  </div>
+      <button>Explore Books</button>
 
-  <!-- AUTHORS -->
-  <h2 class="section-title">Top Authors</h2>
-  <div class="authors">
-    <div class="author">Author 1</div>
-    <div class="author">Author 2</div>
-    <div class="author">Author 3</div>
-  </div>
+    </section>
 
-  <!-- DASHBOARD ANALYTICS -->
-<section class="dashboard-analytics">
-  <h2 class="section-title">Dashboard Analytics</h2>
+    <!-- STATS -->
+    <section class="stats">
 
-  <div class="analytics-grid">
-    <div class="analytics-card">
-      <h3>Most Read Category</h3>
-      <p>Fiction</p>
-    </div>
+      <div class="stat-card">
+        <i data-lucide="book-open"></i>
+        <h3>1200+</h3>
+        <p>Total Books</p>
+      </div>
 
-    <div class="analytics-card">
-      <h3>Popular Author</h3>
-      <p>Paulo Coelho</p>
-    </div>
+      <div class="stat-card">
+        <i data-lucide="pen-tool"></i>
+        <h3>300+</h3>
+        <p>Authors</p>
+      </div>
 
-    <div class="analytics-card">
-      <h3>Delivered Books</h3>
-      <p>850+</p>
-    </div>
+      <div class="stat-card">
+        <i data-lucide="shopping-cart"></i>
+        <h3>850+</h3>
+        <p>Orders</p>
+      </div>
 
-    <div class="analytics-card">
-      <h3>Growth</h3>
-      <p>+24%</p>
-    </div>
-  </div>
-</section>
+      <div class="stat-card">
+        <i data-lucide="star"></i>
+        <h3>4.8</h3>
+        <p>Rating</p>
+      </div>
 
-<!-- PREMIUM BANNER -->
-<section class="dashboard-banner">
-  <h2>Unlock Premium Reading Access</h2>
-  <p>Get unlimited books, author meetups, lounge access, and exclusive offers.</p>
+    </section>
 
-  <div class="banner-buttons">
-    <a href="#">Upgrade Plan</a>
-    <a href="#">Explore Books</a>
-  </div>
-</section>
+    <!-- CONTENT GRID -->
+    <section class="content-grid">
 
-  <!-- RECENT ACTIVITY -->
-  <h2 class="section-title">Recent Activity</h2>
-  <div class="activity">
-    <p>✔ New book added</p>
-    <p>✔ 20 orders completed</p>
-    <p>✔ New author registered</p>
-  </div>
+      <div class="panel large">
 
-  <!-- FOOTER -->
-  <footer>
-    © 2026 Pagely Bookstore Dashboard
-  </footer>
+        <h2>Featured Books</h2>
+
+        <div class="book-list">
+
+          <div>
+            <span>Atomic Habits</span>
+            <p>James Clear</p>
+            <b>Available</b>
+          </div>
+
+          <div>
+            <span>Rich Dad Poor Dad</span>
+            <p>Robert Kiyosaki</p>
+            <b>Popular</b>
+          </div>
+
+          <div>
+            <span>Deep Work</span>
+            <p>Cal Newport</p>
+            <b>New</b>
+          </div>
+
+        </div>
+
+      </div>
+
+      <div class="panel">
+
+        <h2>Reading Progress</h2>
+
+        <div class="progress-circle">
+          <h3>89%</h3>
+          <p>Goal Completed</p>
+        </div>
+
+        <div class="mini-stats">
+          <p><b>48</b> Books Read</p>
+          <p><b>12</b> Wishlist</p>
+        </div>
+
+      </div>
+
+    </section>
+
+    <!-- SECOND GRID -->
+    <section class="content-grid">
+
+      <div class="panel">
+
+        <h2>Top Categories</h2>
+
+        <div class="category-list">
+          <span>Fiction</span>
+          <span>Romance</span>
+          <span>Biography</span>
+          <span>Business</span>
+        </div>
+
+      </div>
+
+      <div class="panel">
+
+        <h2>Recent Activity</h2>
+
+        <div class="activity">
+          <p>New book added to library</p>
+          <p>20 orders completed</p>
+          <p>New author registered</p>
+          <p>Wishlist updated</p>
+        </div>
+
+      </div>
+
+    </section>
+
+    <!-- BANNER -->
+    <section class="banner">
+
+      <h2>Unlock Premium Reading Access</h2>
+
+      <p>
+        Get unlimited books, author meetups, lounge access, and exclusive offers.
+      </p>
+
+      <button>Upgrade Plan</button>
+
+    </section>
+
+  </main>
 
 </div>
+
+<script>
+  lucide.createIcons();
+</script>
 
 </body>
 </html>

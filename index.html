@@ -11,9 +11,30 @@
   <link rel="stylesheet" href="index.css">
   
 
-  <script src="https://unpkg.com/lucide@latest"></script>
+  <script src="https://unpkg.com/lucide@latest" ></script>
 
   <link rel="icon" type="image/png" href="images/logo for website.jpg">
+
+  <script>
+
+function toggleRTL(){
+
+  if(document.body.style.direction === "rtl"){
+
+    document.body.style.direction = "ltr";
+
+  }
+
+  else{
+
+    document.body.style.direction = "rtl";
+
+  }
+
+}
+
+</script>
+
 </head>
 
 
@@ -89,11 +110,12 @@
 
 
     <!-- RTL BUTTON -->
-    <button class="rtl-btn">
+    <button class="rtl-btn" onclick="toggleRTL()">
+  RTL
+</button>
 
-      RTL
+      
 
-    </button>
 
 
     <!-- LOGIN BUTTON -->
@@ -111,12 +133,30 @@
 <section class="hero" id="home">
 
   <div class="hero-text">
-    <h1>Discover Your Next <span>Favorite Book</span></h1>
-    <p>Explore thousands of books from independent authors and publishers around the world.</p>
+    <span class="hero-label">Independent Bookstore • Curated Reads • Reader Community</span>
+    <h1>Discover Books That Stay With You</h1>
+    <p>Explore handpicked books, thoughtful recommendations, author-led sessions, and a warm reading community built for modern book lovers.</p>
 
     <div class="hero-buttons">
       <button class="primary-btn">Browse Books</button>
       <button class="secondary-btn">Join Community</button>
+    </div>
+
+    <div class="hero-highlights">
+      <div>
+        <strong>10K+</strong>
+        <small>Curated Books</small>
+      </div>
+
+      <div>
+        <strong>500+</strong>
+        <small>Active Readers</small>
+      </div>
+
+      <div>
+        <strong>4.8★</strong>
+        <small>Reader Rating</small>
+      </div>
     </div>
   </div>
 
@@ -130,26 +170,26 @@
 <section class="features" id="features">
 
   <h2 class="section-title">Why Choose Us</h2>
-  <p class="section-text">We provide the best reading experience for book lovers.</p>
+  <p class="section-text">A carefully designed bookstore experience with curated books, smooth delivery, and a community that makes reading more meaningful.</p>
 
   <div class="feature-grid">
 
     <div class="feature-card">
       <i data-lucide="book-open"></i>
-      <h3>Huge Collection</h3>
-      <p>Explore thousands of books across multiple categories.</p>
+      <h3>Curated Collection</h3>
+      <p>Explore fiction, business, technology, self-growth, biographies, and classics selected for serious readers.</p>
     </div>
 
     <div class="feature-card">
       <i data-lucide="truck"></i>
-      <h3>Fast Delivery</h3>
-      <p>Get your books delivered safely and quickly.</p>
+      <h3>Secure Delivery</h3>
+      <p>Order online with safe packaging, reliable dispatch, and easy doorstep delivery for every reader.</p>
     </div>
 
     <div class="feature-card">
       <i data-lucide="users"></i>
-      <h3>Reading Community</h3>
-      <p>Join readers and discuss your favorite books.</p>
+      <h3>Reader Community</h3>
+      <p>Attend book clubs, author events, reading circles, and meaningful discussions with fellow book lovers.</p>
     </div>
 
   </div>
@@ -166,26 +206,38 @@
 
     <div class="author-card">
       <img src="images/image-1.jpg" alt="Author">
-      <h3>James Clear</h3>
-      <p>Atomic Habits</p>
+      <div class="author-info">
+        <h3>James Clear</h3>
+        <p>Atomic Habits</p>
+        <small>Habit building & productivity</small>
+      </div>
     </div>
 
     <div class="author-card">
       <img src="images/image-2.jpg" alt="Author">
-      <h3>Robert Kiyosaki</h3>
-      <p>Rich Dad Poor Dad</p>
+      <div class="author-info">
+        <h3>Robert Kiyosaki</h3>
+        <p>Rich Dad Poor Dad</p>
+        <small>Money mindset & finance</small>
+      </div>
     </div>
 
     <div class="author-card">
       <img src="images/image-3.jpg" alt="Author">
-      <h3>Morgan Housel</h3>
-      <p>Psychology of Money</p>
+      <div class="author-info">
+        <h3>Morgan Housel</h3>
+        <p>Psychology of Money</p>
+        <small>Wealth, behavior & life</small>
+      </div>
     </div>
 
     <div class="author-card">
       <img src="images/image-1.jpg" alt="Author">
-      <h3>Paulo Coelho</h3>
-      <p>The Alchemist</p>
+      <div class="author-info">
+        <h3>Paulo Coelho</h3>
+        <p>The Alchemist</p>
+        <small>Spiritual fiction & journeys</small>
+      </div>
     </div>
 
   </div>
@@ -195,7 +247,8 @@
 <!-- BOOKS -->
 <section class="books" id="books">
 
-  <h2 class="section-title">Featured Books</h2>
+  <h2 class="section-title">Featured Reads</h2>
+  <p class="section-text">Premium recommendations selected for readers who want knowledge, growth, and unforgettable stories.</p>
 
   <div class="book-grid">
 
@@ -204,6 +257,7 @@
       <div class="book-content">
         <h3>Atomic Habits</h3>
         <p>James Clear</p>
+        <small>A practical guide to building better habits through small daily systems.</small>
         <span class="price">$20</span>
         <button class="primary-btn">Add To Cart</button>
       </div>
@@ -214,6 +268,7 @@
       <div class="book-content">
         <h3>Rich Dad Poor Dad</h3>
         <p>Robert Kiyosaki</p>
+        <small>A powerful personal finance classic about money, assets, and mindset.</small>
         <span class="price">$18</span>
         <button class="primary-btn">Add To Cart</button>
       </div>
@@ -224,6 +279,7 @@
       <div class="book-content">
         <h3>The Psychology of Money</h3>
         <p>Morgan Housel</p>
+        <small>A thoughtful book on wealth, behavior, patience, and financial decisions.</small>
         <span class="price">$25</span>
         <button class="primary-btn">Add To Cart</button>
       </div>
@@ -237,7 +293,7 @@
 <section class="best-sellers">
 
   <h2 class="section-title">Best Sellers</h2>
-  <p class="section-text">Most loved books by our readers.</p>
+  <p class="section-text">Reader-favorite titles that continue to inspire, motivate, and entertain our bookstore community.</p>
 
   <div class="seller-grid">
 
@@ -264,29 +320,67 @@
 </section>
 
 <!-- REVIEWS -->
+<!-- REVIEWS -->
 <section class="reviews">
 
-  <h2 class="section-title">Reader Reviews</h2>
-  <p class="section-text">What our readers say about us.</p>
+  <h2 class="section-title">What Readers Say</h2>
 
-  <div class="feature-grid">
+  <p class="section-text">
+    Real experiences from passionate readers who love discovering books with Pagely.
+  </p>
 
-    <div class="feature-card">
-      <i data-lucide="star"></i><i data-lucide="star"></i><i data-lucide="star"></i><i data-lucide="star"></i>
-      <h3>Rahul</h3>
-      <p>Great collection and fast delivery.</p>
+  <div class="review-wrapper">
+
+    <!-- REVIEW 1 -->
+    <div class="review-box">
+
+      <div class="review-image">
+        <img src="images/author-image-1.jpg" alt="Reader">
+      </div>
+
+      <div class="review-content">
+
+        <div class="stars">
+          ★★★★★
+        </div>
+
+        <p>
+          “Pagely completely changed my reading routine. The curated recommendations
+          and peaceful reading experience make it feel more than just a bookstore.”
+        </p>
+
+        <h3>Rahul Verma</h3>
+
+        <span>Book Club Member</span>
+
+      </div>
+
     </div>
 
-    <div class="feature-card">
-      <i data-lucide="star"></i><i data-lucide="star"></i><i data-lucide="star"></i>
-      <h3>Ayesha</h3>
-      <p>Very good experience.</p>
-    </div>
+    <!-- REVIEW 2 -->
+    <div class="review-box reverse">
 
-    <div class="feature-card">
-      <i data-lucide="star"></i><i data-lucide="star"></i><i data-lucide="star"></i>
-      <h3>Kiran</h3>
-      <p>Best bookstore website.</p>
+      <div class="review-image">
+        <img src="images/author-image-2.jpg" alt="Reader">
+      </div>
+
+      <div class="review-content">
+
+        <div class="stars">
+          ★★★★★
+        </div>
+
+        <p>
+          “The bookstore atmosphere, premium collection, and fast delivery service
+          are honestly unmatched. It feels modern yet very personal.”
+        </p>
+
+        <h3>Ayesha Khan</h3>
+
+        <span>Premium Member</span>
+
+      </div>
+
     </div>
 
   </div>
@@ -297,27 +391,28 @@
 <section class="pricing" id="pricing">
 
   <h2 class="section-title">Membership Plans</h2>
+  <p class="section-text">Choose a plan that fits your reading lifestyle, from casual discovery to premium community access.</p>
 
   <div class="pricing-grid">
 
     <div class="pricing-card">
       <h3>Basic</h3>
       <div class="price-tag">$10</div>
-      <p>Access to standard collection</p>
+      <p>Access to standard collection, weekly picks, and bookstore updates.</p>
       <button class="secondary-btn">Choose Plan</button>
     </div>
 
     <div class="pricing-card popular">
       <h3>Popular</h3>
       <div class="price-tag">$25</div>
-      <p>Premium books + early access</p>
+      <p>Premium books, early access, reading lounge benefits, and exclusive offers.</p>
       <button class="primary-btn">Choose Plan</button>
     </div>
 
     <div class="pricing-card">
       <h3>Premium</h3>
       <div class="price-tag">$40</div>
-      <p>All benefits + community events</p>
+      <p>All benefits, priority event access, curated lists, and community sessions.</p>
       <button class="secondary-btn">Choose Plan</button>
     </div>
 
@@ -328,8 +423,8 @@
 <!-- APP -->
 <section class="app-section">
 
-  <h2 class="section-title">Download Our App</h2>
-  <p class="section-text">Read books anytime anywhere.</p>
+  <h2 class="section-title">Read Anywhere, Stay Connected</h2>
+  <p class="section-text">Explore books, save wishlists, track orders, and join reading events from one beautiful experience.</p>
 
   <div class="hero-buttons">
     <button class="secondary-btn ">Explore Books</button>
@@ -341,8 +436,8 @@
 <!-- NEWSLETTER -->
 <section class="newsletter" id="contact">
 
-  <h2 class="section-title">Subscribe Newsletter</h2>
-  <p>Get updates about new books and offers.</p>
+  <h2 class="section-title">Join Our Reader Newsletter</h2>
+  <p>Get curated recommendations, author event updates, and exclusive bookstore offers.</p>
 
   <form>
     <input type="email" placeholder="Enter your email" required>
@@ -358,7 +453,7 @@
 
     <div>
       <h3>Independent Bookstore</h3>
-      <p>Discover amazing books from independent authors around the world.</p>
+      <p>Discover curated books, thoughtful recommendations, and a growing community of passionate readers.</p>
 
       <div class="social-icons">
         <a href="#"><i data-lucide="camera"></i></a>
