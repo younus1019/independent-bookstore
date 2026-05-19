@@ -3,44 +3,36 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
   <title>Sign Up - Pagely Bookstore</title>
 
   <link rel="icon" type="image/png" href="images/logo for website.jpg">
+  <link rel="stylesheet" href="./global.css">
+
 
   <link rel="stylesheet" href="signup.css">
+
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-  <script src="https://unpkg.com/lucide@latest"></script>
 
-  <script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+ 
 
-function toggleRTL(){
+  <script src="./js/component.js" defer></script>
 
-  if(document.body.style.direction === "rtl"){
-
-    document.body.style.direction = "ltr";
-
-  }
-
-  else{
-
-    document.body.style.direction = "rtl";
-
-  }
-
-}
-
-</script>
 </head>
 
 <body>
 
   <div class="top-actions">
-    <button class="rtl-btn" onclick="toggleRTL()">
+
+    <button class="rtl-btn" id="rtl-toggle">
   RTL
 </button>
-    <button class="mode-btn">
-      <i data-lucide="moon"></i>
-    </button>
+
+<button class="mode-btn" id="theme-toggle">
+  <i class="fa-solid fa-sun"></i>
+</button>
+
   </div>
 
   <main class="signup-wrapper">
@@ -64,6 +56,7 @@ function toggleRTL(){
         </div>
 
         <div class="form-row">
+
           <div class="form-group">
             <label>First Name *</label>
             <input type="text" placeholder="Jane" required>
@@ -73,6 +66,7 @@ function toggleRTL(){
             <label>Last Name *</label>
             <input type="text" placeholder="Doe" required>
           </div>
+
         </div>
 
         <div class="form-group">
@@ -81,24 +75,28 @@ function toggleRTL(){
         </div>
 
         <div class="form-row">
+
           <div class="form-group password-box">
             <label>Password *</label>
             <input type="password" placeholder="••••••••" required>
-            <i data-lucide="eye"></i>
+            <i class="fa-solid fa-eye"></i>
           </div>
 
           <div class="form-group password-box">
             <label>Confirm Password *</label>
             <input type="password" placeholder="••••••••" required>
-            <i data-lucide="eye"></i>
+            <i class="fa-solid fa-eye"></i>
           </div>
+
         </div>
 
         <label class="terms-box">
           <input type="checkbox" required>
+
           <span>
             I confirm that all provided information is accurate, and I agree to the
-            <a href="#">Pagely Terms of Service</a> and <a href="#">Privacy Policy</a>.
+            <a href="#">Pagely Terms of Service</a> and
+            <a href="#">Privacy Policy</a>.
           </span>
         </label>
 
@@ -114,12 +112,6 @@ function toggleRTL(){
       </p>
 
     </section>
-
-  </main>
-
-  <script>
-    lucide.createIcons();
-  </script>
-
+</main> 
 </body>
 </html>

@@ -191,16 +191,11 @@ input:focus{
 }
 
 .remember-me label{
-  margin:0;
-  font-size:14px;
-  color:var(--text-light);
+  color:#7b5c66;
 }
 
 .forgot-password{
-  font-size:14px;
-  color:var(--primary);
-  text-decoration:none;
-  font-weight:500;
+  color:#ff4f8b;
 }
 
 .top-actions{
@@ -279,10 +274,37 @@ input:focus{
 }
 
 .mode-btn i{
-  width:18px;
-  height:18px;
+  font-size:18px;
 }
 
 .mode-btn:hover{
   background:#e63d77;
+}
+
+body.dark{
+  background:#111827;
+  color:white;
+}
+
+body.dark .bg{
+  background:linear-gradient(135deg,#111827,#1f2937);
+}
+
+body.dark .login-card{
+  background:#1f2937;
+  color:white;
+  border-color:#374151;
+}
+
+body.dark input{
+  background:#111827;
+  color:white;
+  border-color:#374151;
+}
+
+body.dark label,
+body.dark .subtitle,
+body.dark .divider,
+body.dark .signup{
+  color:#d1d5db;
 }

@@ -2,31 +2,21 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Pagely Dashboard</title>
+  <title>Pagely Bookstore</title>
 
+  <link rel="stylesheet" href="./global.css">
   <link rel="stylesheet" href="dashboard.css">
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-  <script src="https://unpkg.com/lucide@latest"></script>
+
+     <link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  
   <link rel="icon" type="image/png" href="images/logo for website.jpg">
-  <script>
 
-function toggleRTL(){
+   <script src="./js/component.js" defer></script>
+  
 
-  if(document.body.style.direction === "rtl"){
 
-    document.body.style.direction = "ltr";
-
-  }
-
-  else{
-
-    document.body.style.direction = "rtl";
-
-  }
-
-}
-
-</script>
 </head>
 
 <body>
@@ -38,7 +28,7 @@ function toggleRTL(){
 
     <div class="brand">
       <img src="images/logo for website.jpg" alt="Pagely Logo">
-      <span>Pagely</span>
+      <span>Pagely Bookstore</span>
     </div>
 
     <ul>
@@ -76,6 +66,12 @@ function toggleRTL(){
         <div class="notify">
           <i data-lucide="bell"></i>
         </div>
+        <!-- DARK / LIGHT -->
+    <button class="theme-btn" id="theme-toggle">
+
+      <i class="fa-solid fa-sun"></i>
+
+    </button>
         <button class="rtl-btn" onclick="toggleRTL()">
   RTL
 </button>
@@ -229,9 +225,7 @@ function toggleRTL(){
 
 </div>
 
-<script>
-  lucide.createIcons();
-</script>
+
 
 </body>
 </html>

@@ -5,41 +5,34 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Login Page</title>
 
+  <link rel="stylesheet" href="./global.css">
   <link rel="stylesheet" href="login.css">
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="icon" type="image/png" href="images/logo for website.jpg">
+      <script src="./js/component.js" defer></script>
+
+      
 </head>
-<link rel="icon" type="image/png" href="images/logo for website.jpg">
-<script>
 
-function toggleRTL(){
 
-  if(document.body.style.direction === "rtl"){
-
-    document.body.style.direction = "ltr";
-
-  }
-
-  else{
-
-    document.body.style.direction = "rtl";
-
-  }
-
-}
-
-</script>
 
 <body>
 
    <div class="top-actions">
-    <button class="rtl-btn" onclick="toggleRTL()">
-  RTL
-</button>
-    <button class="mode-btn">
-      <i data-lucide="moon"></i>
-    </button>
-  </div> 
 
+  <button class="rtl-btn" id="rtl-toggle">
+    RTL
+  </button>
+
+  <button class="mode-btn" id="theme-toggle">
+
+    <i class="fa-solid fa-sun"></i>
+
+  </button>
+
+</div>
   <div class="bg"></div>
 
   <div class="login-wrapper">
@@ -83,7 +76,7 @@ function toggleRTL(){
         <button class="apple-btn"> Continue with Apple</button>
 
         <p class="signup">
-          Not in the guild yet? <a href="#">Sign up</a>
+          Not in the guild yet? <a href="./signup.html">Sign up</a>
         </p>
 
       </form>
