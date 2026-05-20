@@ -98,6 +98,30 @@ function setupRTLToggle(){
 
 }
 
+setupMobileMenu();
+
+
+function setupMobileMenu(){
+
+  const menuToggle = document.getElementById("menu-toggle");
+  const navbar = document.querySelector(".navbar");
+
+  if(menuToggle && navbar){
+
+    menuToggle.addEventListener("click", () => {
+
+      navbar.classList.toggle("active");
+
+      menuToggle.innerHTML = navbar.classList.contains("active")
+        ? '<i class="fa-solid fa-xmark"></i>'
+        : '<i class="fa-solid fa-bars"></i>';
+
+    });
+
+  }
+
+}
+
 
 // ============================
 // SCROLL TO TOP

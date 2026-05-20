@@ -636,3 +636,335 @@ body.rtl small{
 
 
 
+
+/* =========================================
+DARK MODE
+========================================= */
+
+
+
+
+
+/* =========================================
+DARK MODE - CLEAN VERSION
+========================================= */
+
+body.dark{
+  background:#111827;
+  color:#f9fafb;
+}
+
+/* =========================================
+HEADER
+========================================= */
+
+body.dark .header{
+  background:#0f172a !important;
+  border-bottom:1px solid #374151 !important;
+}
+
+body.dark .navbar a{
+  color:#d1d5db !important;
+}
+
+body.dark .dropdown-menu{
+  background:#1f2937 !important;
+}
+
+body.dark .dropdown-menu li a{
+  color:#ffffff !important;
+}
+
+/* =========================================
+FOOTER
+========================================= */
+
+body.dark footer{
+  background:#0f172a !important;
+}
+
+body.dark footer p,
+body.dark footer a,
+body.dark footer h2,
+body.dark footer h3{
+  color:#d1d5db !important;
+}
+
+/* =========================================
+COMMON CARDS / BOXES
+========================================= */
+
+body.dark .card,
+body.dark .feature-card,
+body.dark .author-card,
+body.dark .book-card,
+body.dark .seller-card,
+body.dark .pricing-card,
+body.dark .blog-card,
+body.dark .panel,
+body.dark .feature-box,
+body.dark .process-card,
+body.dark .pricing-faq-card,
+body.dark .article-content,
+body.dark .sidebar-box,
+body.dark .related-card,
+body.dark .contact-info,
+body.dark .contact-form-box{
+  background:#1f2937 !important;
+  border-color:#374151 !important;
+  color:#ffffff !important;
+}
+
+/* =========================================
+SECTIONS
+========================================= */
+
+/* HERO IMAGE FIX */
+
+/* DARK MODE HERO BACKGROUND IMAGE FIX */
+
+body.dark .hero,
+body.dark .about-hero,
+body.dark .service-hero,
+body.dark .contact-hero,
+body.dark .pricing-hero,
+body.dark .blog-details-hero{
+  background-size:cover !important;
+  background-position:center !important;
+  background-repeat:no-repeat !important;
+}
+
+/* keep image visible */
+body.dark img{
+  opacity:1 !important;
+  visibility:visible !important;
+  filter:none !important;
+}
+
+/* DARK OVERLAY */
+
+body.dark .hero::before,
+body.dark .about-hero::before,
+body.dark .service-hero::before,
+body.dark .pricing-hero::before,
+body.dark .contact-hero::before,
+body.dark .blog-details-hero::before{
+  content:"";
+
+  position:absolute;
+  inset:0;
+
+  background:rgba(0,0,0,0.45);
+
+  z-index:1;
+}
+
+/* KEEP CONTENT ABOVE OVERLAY */
+
+body.dark .hero-content,
+body.dark .about-hero-content,
+body.dark .contact-hero-content,
+body.dark .blog-details-content{
+  position:relative;
+  z-index:2;
+}
+
+/* =========================================
+TEXT
+========================================= */
+
+body.dark h1,
+body.dark h2,
+body.dark h3,
+body.dark h4,
+body.dark h5,
+body.dark h6{
+  color:#ffffff !important;
+}
+
+body.dark p,
+body.dark li,
+body.dark label,
+body.dark small{
+  color:#d1d5db !important;
+}
+
+/* =========================================
+LINKS
+========================================= */
+
+body.dark a{
+  color:#ffffff;
+}
+
+/* =========================================
+INPUTS
+========================================= */
+
+body.dark input,
+body.dark textarea,
+body.dark select{
+  background:#111827 !important;
+  color:#ffffff !important;
+  border:1px solid #374151 !important;
+}
+
+/* =========================================
+BUTTONS
+========================================= */
+
+body.dark .primary-btn{
+  background:#ff4f8b !important;
+  color:#ffffff !important;
+}
+
+body.dark .secondary-btn{
+  background:transparent !important;
+  color:#ff4f8b !important;
+  border:2px solid #ff4f8b !important;
+}
+
+body.dark .theme-btn,
+body.dark .rtl-btn{
+  background:#1f2937 !important;
+  color:#ffffff !important;
+  border-color:#374151 !important;
+}
+
+/* =========================================
+TAGS / PILLS
+========================================= */
+
+body.dark .tag,
+body.dark .article-tags span,
+body.dark .blog-meta div,
+body.dark .category-list a,
+body.dark .contact-hero-content span,
+body.dark .blog-details-content span,
+body.dark .section-heading span{
+  background:#374151 !important;
+  color:#ffffff !important;
+  border-color:#4b5563 !important;
+}
+
+/* =========================================
+SIDEBAR POSTS
+========================================= */
+
+body.dark .sidebar-post{
+  background:#111827 !important;
+  border:1px solid #374151 !important;
+}
+
+/* =========================================
+HERO SECTIONS
+========================================= */
+
+body.dark .hero,
+body.dark .about-hero,
+body.dark .service-hero,
+body.dark .pricing-hero,
+body.dark .contact-hero,
+body.dark .blog-details-hero{
+  background-size:cover !important;
+  background-position:center !important;
+}
+
+/* =========================================
+IMAGES FIX
+========================================= */
+
+body.dark img{
+  opacity:1 !important;
+  visibility:visible !important;
+  filter:none !important;
+}
+
+/* =========================================
+ICONS
+========================================= */
+
+body.dark i{
+  color:inherit;
+}
+
+
+.menu-toggle{
+  display:none;
+  width:42px;
+  height:42px;
+  border:none;
+  border-radius:12px;
+  background:var(--primary);
+  color:white;
+  font-size:18px;
+  align-items:center;
+  justify-content:center;
+  cursor:pointer;
+}
+
+@media(max-width:1024px){
+
+  .header{
+    flex-direction:row;
+    min-height:72px;
+    padding:10px 4%;
+  }
+
+  .navbar{
+    position:absolute;
+    top:72px;
+    left:0;
+    width:100%;
+    display:none;
+    background:var(--secondary);
+    padding:18px 5%;
+    border-bottom:1px solid var(--border);
+    box-shadow:0 15px 35px rgba(0,0,0,0.12);
+  }
+
+  .navbar.active{
+    display:block;
+  }
+
+  .navbar ul{
+    flex-direction:column;
+    align-items:flex-start;
+    gap:0;
+  }
+
+  .navbar li,
+  .navbar a{
+    width:100%;
+  }
+
+  .navbar a{
+    display:block;
+    padding:13px 0;
+  }
+
+  .dropdown-menu{
+    position:static;
+    opacity:1;
+    visibility:visible;
+    transform:none;
+    display:none;
+    box-shadow:none;
+    background:white;
+    width:100%;
+    margin-top:5px;
+  }
+
+  .dropdown:hover .dropdown-menu{
+    display:block;
+  }
+
+  .header-buttons{
+    margin-left:auto;
+    gap:8px;
+  }
+
+  .menu-toggle{
+    display:flex;
+  }
+}

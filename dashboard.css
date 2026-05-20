@@ -518,3 +518,74 @@ body{
   align-items:center;
   gap:10px;
 }
+
+
+body.dark .dashboard,
+body.dark .dashboard-main,
+body.dark .main-content,
+body.dark .dashboard-content{
+  background:#111827 !important;
+  color:white !important;
+}
+
+body.dark .sidebar,
+body.dark .dashboard-sidebar{
+  background:linear-gradient(180deg,#0f172a,#1f2937) !important;
+}
+
+body.dark .dashboard-card,
+body.dark .stat-card,
+body.dark .analytics-card,
+body.dark .activity,
+body.dark .topbar,
+body.dark .profile-card{
+  background:#1f2937 !important;
+  color:white !important;
+  border-color:#374151 !important;
+}
+
+body.dark .dashboard h1,
+body.dark .dashboard h2,
+body.dark .dashboard h3,
+body.dark .dashboard p,
+body.dark .dashboard span{
+  color:white !important;
+}
+
+.brand{
+  display:flex;
+  align-items:center;
+  gap:12px;
+
+  text-decoration:none;
+}
+
+.brand span{
+  color:inherit;
+}
+
+.brand{
+  text-decoration:none !important;
+}
+
+.brand span{
+  color:white !important;
+}
+
+.brand b{
+  color:#ff4f8b !important;
+}
+
+.brand{
+  text-decoration:none;
+}
+
+.brand h2{
+  color:#4a2c36 !important;
+  font-size:32px;
+  font-weight:700;
+}
+
+.brand h2 span{
+  color:#ff4f8b !important;
+}

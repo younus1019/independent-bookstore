@@ -990,6 +990,46 @@ PREMIUM BLOG HERO
   transform:translateY(-2px);
 }
 
+.category-grid{
+  display:grid;
+  grid-template-columns:repeat(2,1fr);
+  gap:18px;
+}
+
+.category-box{
+  display:flex;
+  align-items:center;
+  gap:12px;
+
+  background:white;
+  border:1px solid var(--border);
+
+  padding:18px 20px;
+
+  border-radius:18px;
+
+  font-weight:600;
+
+  color:var(--text-dark);
+
+  transition:0.3s ease;
+}
+
+.category-box i{
+  color:var(--primary);
+  font-size:18px;
+}
+
+.category-box:hover{
+  transform:translateY(-4px);
+  background:var(--primary);
+  color:white;
+}
+
+.category-box:hover i{
+  color:white;
+}
+
 
 
 
